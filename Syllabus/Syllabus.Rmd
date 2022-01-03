@@ -186,7 +186,7 @@ Weights <- tribble(
 
 # Course description
 
-How does the Earth work as a system? In this class we will learn the basics of the science of Geology with a focus on physical processes and materials. We will cover major topics including: plate tectonics, mineral chemistry, the rock cycle, geological time, sedimentary processes, climate change, and geological map reading.
+What can studying the history of Earth tell us about the future and the present? In this course we will walk though major events in the history of our planet and dive into the processes and peculiarities that caused them. We will connect these events to places that matter to us and learn about how their occurrence shapes life today. By the end of the semester you will have a broad understanding of the science of Geology and its application to studying how the Earth works.
 
 # Important Dates
 January 17th - Last day to drop without WD\
