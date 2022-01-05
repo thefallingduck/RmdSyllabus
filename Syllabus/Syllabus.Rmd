@@ -17,10 +17,9 @@ instructor:
 - name: Dr. Benjamin J. Linzmeier
   email: blinzmeier@southalabama.edu
   prefered_contact: Canvas LMS messages
-  officehours: 1:00-3:00 p.m. MTuTh
+  officehours: 1 – 3 PM Mo, 4 – 5 PM Tu, 10:30 AM – 1:30 PM Fr
   office: Life Science Building room 344
   correspondence_policy: Within 24 hours on weekdays; 48 hours on weekends
-  instructor:
 
 # You can include multiple entries for a teaching assistant by filling in all these options below. Currently this is set to populate two columns on the syllabus but there is not an even column break inserted.
 
@@ -34,7 +33,7 @@ instructor:
 classroom: 'LCSB 337'
 classhours: 11:15 am - 12:05 pm	MW
 labroom: 'LCSB 337'
-labhours: 1:25 pm - 3:55 pm	W
+labhours: 1:25 pm - 4:25 pm	W
 fontfamily: mathpazo
 fontsize: 11pt
 header-includes: \linespread{1.05}
@@ -155,6 +154,8 @@ Weights <- tribble(
 ```
 
 # Course description
+
+How do we take our observations of sedimentary rocks and turn them into interpretations of the history of the Earth? In Stratigraphy (GY304W) we will work to tie observations of sedimentary rocks to their interpretation in both time and space with a focus on the process of conducting stratigraphic research.
 
 Why does Sedimentology (GY306[W]) matter? Sediments house the record of climate at Earth's surface, influence climate through feedbacks, and house important resources. In this course you will learn how sediments are formed, moved, and preserved in the rock record. We will discuss the way that paleoenvironments are interpreted from observations of rocks on multiple scales. In addition, we will work together to improve your writing skills with a focus on the genres of writing you may be expected to do as professional geologists.
 
