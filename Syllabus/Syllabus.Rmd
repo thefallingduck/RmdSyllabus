@@ -162,7 +162,6 @@ Lecture_Topic <- c("Introduction and overview",
                    "",
                    "",
                    "",
-                   "",
                    ""
                    )
 
