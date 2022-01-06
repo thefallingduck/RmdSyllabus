@@ -117,6 +117,36 @@ MeetingDays$Class <- 1:nrow(MeetingDays)
 
 Lecture_Topic <- 1:nrow(MeetingDays)
 
+Lecture_Topic <- c("Introduction",
+                   "Weathing and Erosion",
+                   "Siliciclastic rocks and environments",
+                   "Carbonate rocks and environments",
+                   "Sedimentary structures in environments",
+                   "Type sections and stratigraphic columns",
+                   "Correlation and stratigraphic columns",
+                   "Steno's principles",
+                   "Relative dating",
+                   "Lithostratigraphy and Chronostratigraphy",
+                   "The Geological timescale",
+                   "Midterm",
+                   "Midterm revisited",
+                   "Geophysical logs",
+                   "Geophysical logs",
+                   "Correlation and logs",
+                   "Correlation and logs",
+                   "Cyclostratigraphy",
+                   "Cyclostratigraphy",
+                   "Stratigraphy and climate",
+                   "Stratigraphy and climate",
+                   "Sequence Stratigraphy",
+                   "Sequence Stratigraphy",
+                   "Macrostratigraphy",
+                   "Macrostratigraphy",
+                   "",
+                   "",
+                   "Semester Review",
+                   "Final Presentations")
+
 
 MeetingDays <- bind_cols(MeetingDays, Lecture = Lecture_Topic)
 
@@ -139,15 +169,15 @@ Weights <- tribble(
                     ~ Item,
                     ~ Weight,
                     "Writing scaffolding",
-                    "20 %",
+                    "5 %",
                     "Semester Project",
                     "25 %",
                     "Labratory Assignments",
-                    "20 %",
+                    "38 %",
                     "Midterm Exam",
-                    "15 %",
+                    "13 %",
                     "Final Exam",
-                    "20 %"
+                    "19 %"
                   )
 
 
@@ -155,9 +185,7 @@ Weights <- tribble(
 
 # Course description
 
-How do we take our observations of sedimentary rocks and turn them into interpretations of the history of the Earth? In Stratigraphy (GY304W) we will work to tie observations of sedimentary rocks to their interpretation in both time and space with a focus on the process of conducting stratigraphic research.
-
-Why does Sedimentology (GY306[W]) matter? Sediments house the record of climate at Earth's surface, influence climate through feedbacks, and house important resources. In this course you will learn how sediments are formed, moved, and preserved in the rock record. We will discuss the way that paleoenvironments are interpreted from observations of rocks on multiple scales. In addition, we will work together to improve your writing skills with a focus on the genres of writing you may be expected to do as professional geologists.
+How do we take our observations of sedimentary rocks and turn them into interpretations of the history of the Earth? In Stratigraphy (GY304W) we will work to tie observations of sedimentary rocks to their interpretation in both time and space with a focus on the process of conducting stratigraphic research. We will spend time on various correlation and geochronological tools as well as stratigraphic interpretation frameworks.
 
 # Writing requirements
 
@@ -174,7 +202,7 @@ See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for 
 
 1.  Observe, describe, classify, and communicate characteristics of sediments and sedimentary rocks.
 
-2.  Develop a framework for building hypotheses about the distributions of sediments, sedimentary structures, and sedimentary environments.
+2.  Interpret successions of sedimentary rocks in time and space and relate them to environmental change.
 
 3.  Communicate sedimentary geology to a variety of audiences using different genres of writing.
 
@@ -182,10 +210,10 @@ See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for 
 
 # Class textbooks
 
-There is no required textbook for this fall, however I recommend getting these books from the library or used versions to compliment the lectures. Without a required textbook I will also be assigning technical papers to read throughout the semester. We will discuss these and you will build your technical reading skills along with your writing skills.
+There is no required textbook for this spring, however I recommend getting these books from the library or used versions to compliment the lectures. Without a required textbook I will also be assigning technical papers to read throughout the semester. We will discuss these and you will build your technical reading skills along with your writing skills.
 
 ### For general Sedimentology and Stratigraphy
-Gary Nichols, __Sedimentology and Stratigraphy__, 2nd edition, Wiley-Blackwell, ISBN: 978-1-405-13592-4
+Sam Boggs, __Principles of Sedimentology and Stratigraphy__, 5th edition or earlier edition, Pearson, ISBN: 9780321643186
 
 ### Field focused rock ID
 Dorrik A.V. Stow, __Sedimentary Rocks in the Field: A Colour Guide__, Manson Publishing Ltd, ISBN 10: 1874545693
@@ -194,7 +222,7 @@ Dorrik A.V. Stow, __Sedimentary Rocks in the Field: A Colour Guide__, Manson Pub
 William Strunk JR. and E.B. White, __The Elements of Style__, ISBN: 1594200696
 
 ### Lectures and papers
-Both lecture slides and papers will be available via Canvas. Slides will be posted after lectures and assigned papers will be available in Canvas.
+Both lecture slides and papers will be available via Canvas. Slides will mostly be posted after lectures and assigned papers will be available in Canvas.
 
 
 \newpage
@@ -226,7 +254,7 @@ kable(MeetingDays[,c("Date",
 ## Grading
 
 ### Late policy
-I will be grading assignments in batches to provide fair assessment to everyone. This means late work can be disruptive. The penalty for late work will be 20% a day after the first 24 hours late. If you have a reasonable excuse (illness, etc.) the late policy may be relaxed.
+I will be grading assignments in batches to provide fair assessment to everyone. This means late work can be disruptive. The penalty for late work will be 20% a day after the first 24 hours late (0% possible after 5 days). If you have a reasonable excuse (illness, etc.) the late policy may be relaxed.
 
 ### Extra credit
 Extra credit may be made available throughout the semester at my discretion.
@@ -268,26 +296,29 @@ Peer review of preprint or publication using example template. The goal of this 
 ## Semester project
 Semester project outline of writing products.
 
-### Project abstract
+### Project topic
+
+Meeting with me or 2-6 sentence description of the research project you plan on doing this semester.
+
+### Project outline
 
 Short outline of full project highlighting the hypotheses to test, data to collect, and impact of the project. This includes no figures but could include a small table for organizing hypotheses.
 
 ### Project first draft
 
-Full proposal draft with figures. The important aspect of this submission is assessment of the research plan and justification.
+Full paper draft with figures. The important aspect of this submission is a first round of feedback for guiding conclusions and papers to read.
 
 ### Project peer review
 
-Review of a peer's proposal with the goal of improving the work by increasing clarity, readability and communication.
+Review of a peer's paper with the goal of improving the work by increasing clarity, readability and communication.
 
 ### Project final draft
 
-Full, final project proposal with figures, time line and clear plan for work. Focus is on clearly communicating to your peers that the work is worth doing and that you can do it.
+Full, final project paper with figures, data, hypothesis, and interpretations. Focus is on clearly communicating the research work you have done.
 
 ### Project presentation
 
-Presentation of a peer's research proposal with a focus on justifying funding their project. The goal is to convince the audience that the project can be done and will have an important impact on society.
-
+Presentation of your research project with a focus on interpretation of data collected or processed by you.
 
 \newpage
 <!-- The sections of code below that include "child=..." are drawing from seperate .md documents. These allow for updating text in a single spot for use in multiple syllabus documents. -->
