@@ -134,7 +134,7 @@ Lecture_Topic <- c("Introduction and science",
                    "13",
                    "14",
                    "Permian Mass Extinction",
-                   "Midterm 1",
+                   "Midterm 2",
                    "Midterm Review",
                    "Mesozoic Life",
                    "Mesozoic Geology",
@@ -172,13 +172,13 @@ Weights <- tribble(
                     ~ Item,
                     ~ Weight,
                     "Discussion posts",
-                    "~11.5 %",
+                    "~21 %",
                     "In-class work",
-                    "~11.5 %",
+                    "~21 %",
                     "Quizzes",
-                    "~38.5 %",
+                    "~42 %",
                     "2 Midterms",
-                    "~38.5 %"
+                    "~16 %"
                   )
 
 
@@ -195,22 +195,20 @@ See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for 
 
 # Course goals
 
-1.    Explain and apply the scientific method as it is practiced in the Geosciences
-2.    Link observations of the Earth on multiple scales to the development of theories
-3.    Explain how the hydrosphere, biosphere, and geosphere interact on multiple timescales and predict how changes in one can affect others
-4.    Read and interpret topographic and geological maps
-5.    Identify common minerals and rocks
-6.    Link geological materials to Earth processes
-7.    Relate facts about the Earth system to human problems
+1.    Explain and apply the scientific method as it is practiced in the Geosciences.
+2.    Link observations of the Earth on multiple scales to the development of theories.
+3.    Identify common invertebrate fossils.
+4.    Describe a broad history of the Earth.
+5.    Link Geological History to current landscapes, biology, and climate.
 
 
 # Class textbook
 
-We will be using the e-book of Exploring Geology by Stephen Reynolds and Julia Johnson. I chose this book because it has guided practice with readings and includes interactive web-based activities based on societally relevant problems related to Geology.
+We will be using Evolution of the Earth by Donald R. Prothero and Robert H. Dott Jr. as a textbook to supplement the lectures. The 7th or 8th edition will be adequate.
 
 
 ### Lectures and papers
-Both lecture slides and supplemental readings will be available via Canvas. Slides will generally be posted after lecture.
+Both lecture slides and supplemental readings will be available via Canvas. Slides will generally be posted shortly before lecture.
 
 
 \newpage
@@ -241,7 +239,7 @@ kable(MeetingDays[,c("Date",
 ## Grading
 
 ### Missing work
-Everyone will have their lowest two discussion posts, readings, and quizzes dropped. This means that you have two weeks of built-in flexibility for life events that come up (e.g. illness, unexpected travel).
+Everyone will have their lowest two discussion posts, gots-and-nots, and quizzes dropped. This means that you have two weeks of built-in flexibility for life events that come up (e.g. illness, unexpected travel).
 
 ### Late work policy
 If you need additional flexibility based on difficulties arising from life, please let me know. That said, given dropping the lowest two weeks worth of work means that I will not be allowing for late quizzes or discussion posts.
