@@ -17,7 +17,7 @@ instructor:
 - name: Dr. Benjamin J. Linzmeier
   email: blinzmeier@southalabama.edu
   prefered_contact: Canvas LMS messages
-  officehours: 1:00-3:00 p.m. MTuTh
+  officehours: 10:00 am - 12:00 pm MW \newline 1:00 - 3:00 pm T
   office: Life Science Building room 344
   correspondence_policy: Within 24 hours on weekdays; 48 hours on weekends
 
@@ -115,11 +115,41 @@ MeetingDays$Class <- 1:nrow(MeetingDays)
 
 #Replace this with c("Lecture topic 1",...,"Lecture topic N") to fill in table.
 
-Lecture_Topic <- c("")
+Lecture_Topic <- c("Introduction",
+                   "Weathering",
+                   "Erosion",
+                   "Abstract Writing",
+                   "Semester Project",
+                   "Carbonate Rocks",
+                   "Fluid Flow Dynamics 1",
+                   "Fluid Flow Dynamics 2",
+                   "Gravity Flows",
+                   "Facies",
+                   "Turbidity currents",
+                   "Sedimentary Structures",
+                   "Depositional Environments",
+                   "Facies and Depositional Environments",
+                   "Midterm review",
+                   "Midterm",
+                   "Rivers, Fans, and Plains 1",
+                   "Rivers, Fans, and Plains 2",
+                   "Lacustrian Environments",
+                   "Eolian Environments",
+                   "Glacial Environments",
+                   "Deltas 1",
+                   "Deltas 2",
+                   "Shallow Marine Environments",
+                   "Marine Environments",
+                   "Carbonate Environments",
+                   "Carbonate Diagenesis",
+                   "Climate and Sedimentology",
+                   "Proposal Presentations"
+                   )
   1:nrow(MeetingDays)
 
+Week_Reading <- c("")
 
-MeetingDays <- bind_cols(MeetingDays, Lecture = Lecture_Topic)
+MeetingDays <- bind_cols(MeetingDays, Lecture = Lecture_Topic, Reading = Week_Reading)
 
 #### Grade table ####
 Grades <- tribble( ~ Grade,
@@ -164,8 +194,9 @@ For this class to fulfill the (W) requirements of USA, you will be doing a semes
 
 # Important Dates
 August 23rd - Last day to drop without WD\
-October 28th - Last day to drop or withdraw\
-See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.
+October 10th - Midterm exam\
+October 28th - Last day to drop or withdraw. See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.\
+December 5th 1:00 to 3:00 pm - Final Exam
 
 \newpage
 
@@ -181,7 +212,7 @@ See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for 
 
 # Class textbooks
 
-We will have two books that you will need for the class this semester. The book on writing below will be referenced and discussed often. We will also refer to the general sedimentology and stratigraphy book.
+We will have two books that you should have access to for the class this semester. The book on writing below will be referenced and discussed often. We will also refer to the general sedimentology and stratigraphy book.
 
 ### For writing
 
@@ -189,6 +220,8 @@ Heard, Stephen B., __The Scientist’s Guide to Writing, 2nd Edition: How to Wri
 
 ### For general Sedimentology and Stratigraphy
 Gary Nichols, __Sedimentology and Stratigraphy__, 2nd edition, Wiley-Blackwell, ISBN: 978-1-405-13592-4
+
+## Optional books
 
 ### Field focused rock ID
 Dorrik A.V. Stow, __Sedimentary Rocks in the Field: A Colour Guide__, Manson Publishing Ltd, ISBN 10: 1874545693
@@ -222,9 +255,9 @@ kable(MeetingDays[,c("Date",
 
 ## Attendance policy
 
--   Students who complete less than 50% of assignments/exams will be assigned a failing (F) grade.
+Students who complete less than 50% of assignments/exams will be assigned a failing (F) grade.
 
--   Review the 'Attendance and Absences Policy', in the Undergraduate and Graduate Bulletin for attendance and absences policy
+Review the 'Attendance and Absences Policy', in the Undergraduate and Graduate Bulletin for attendance and absences policy
 
 ## Grading
 
@@ -273,9 +306,17 @@ Peer review of preprint or publication using example template. The goal of this 
 
 Semester project outline of writing products.
 
-### Project abstract
+### Project Story Summary
 
-Short outline of full project highlighting the hypotheses to test, data to collect, and impact of the project. This includes no figures but could include a small table for organizing hypotheses.
+Short outline of proposed project that answers the following questions. (Based on S.B. Heard's book).\
+1) What is the central question?\
+2) Why is this question important?\
+3) What data (variables) are needed to answer this question?\
+4) What methods are used to get those data?\
+5) What analysis must be applied for the data to answer this question?\
+6) What results are likely?\
+7) How can results answer the question?\
+8) What does the answer tell us about the broader field?
 
 ### Project first draft
 
@@ -293,43 +334,6 @@ Full, final project proposal with figures, time line and clear plan for work. Fo
 
 Presentation of a peer's research proposal with a focus on justifying funding their project. The goal is to convince the audience that the project can be done and will have an important impact on society.
 
-
-\newpage
-<!-- The sections of code below that include "child=..." are drawing from seperate .md documents. These allow for updating text in a single spot for use in multiple syllabus documents. -->
-```{r Academic disruption, child='general_components/academic_disruption.md'}
-
-```
-
-```{r Academic honesty, child='general_components/academic_honesty.md'}
-
-```
-
-## Course and Teacher evaluation
-Student input for the purpose of course improvement is taken very seriously and will potentially be done periodically. Please take the time to evaluate this course and the instructor, especially at the end of the semester. Evaluations will in no way affect your grade.
-
-\newpage
-# Safety
-
-## Field Safety
-
-### Transportation
-Wear your seatbelts at all times while in moving vehicles. Do not distract the driver.
-
-### Location awareness
-Be aware of potential dangers (animals, weather, etc) and avoid them. When in a group, please think about the safety of your peers.
-
-## Building Safety
-
-### Fire
-Random fire safety drills may occur during the course of the term. You will be expected to evacuate the building and assemble at the designated location: outside by the northeast corner of the building (follow your instructor).
-
-### Tornado
-Move away from external windows to the hallway in the basement, first, or second floor. 
-
-### Active Shooter Incident
-"Get Out" of the building as long as they can do so safely. Once you have exited the building and are at a safe location, "Call Out" to law enforcement using 911, USA Police at 460-6312, or press the Emergency button on your LiveSafe Mobile Safety App. If you can't get out, "Shelter in Place" in a secure location that is away from windows and doors, preferably a location that can be locked and barricaded.
-
-\newpage
 # On writing
 
 ## Revising written work
@@ -378,7 +382,39 @@ Write and then revise. Ask for feedback from peers or wait until you have some d
 
 Prompt yourself with questions that have short, concrete answers.
 
-\newpage
+<!-- The sections of code below that include "child=..." are drawing from seperate .md documents. These allow for updating text in a single spot for use in multiple syllabus documents. -->
+```{r Academic disruption, child='general_components/academic_disruption.md'}
+
+```
+
+```{r Academic honesty, child='general_components/academic_honesty.md'}
+
+```
+
+## Course and Teacher evaluation
+Student input for the purpose of course improvement is taken very seriously and will potentially be done periodically. Please take the time to evaluate this course and the instructor, especially at the end of the semester. Evaluations will in no way affect your grade.
+
+# Safety
+
+## Field Safety
+
+### Transportation
+Wear your seatbelts at all times while in moving vehicles. Do not distract the driver.
+
+### Location awareness
+Be aware of potential dangers (animals, weather, etc) and avoid them. When in a group, please think about the safety of your peers.
+
+## Building Safety
+
+### Fire
+Random fire safety drills may occur during the course of the term. You will be expected to evacuate the building and assemble at the designated location: outside by the northeast corner of the building (follow your instructor).
+
+### Tornado
+Move away from external windows to the hallway in the basement, first, or second floor. 
+
+### Active Shooter Incident
+"Get Out" of the building as long as they can do so safely. Once you have exited the building and are at a safe location, "Call Out" to law enforcement using 911, USA Police at 460-6312, or press the Emergency button on your LiveSafe Mobile Safety App. If you can't get out, "Shelter in Place" in a secure location that is away from windows and doors, preferably a location that can be locked and barricaded.
+
 # Campus resources
 
 ```{r COVID policy, child='general_components/COVID_policy.md'}
