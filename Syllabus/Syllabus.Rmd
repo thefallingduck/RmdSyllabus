@@ -147,37 +147,76 @@ Lecture_Topic <- c("Introduction",
                    "Climate and the future 2")
   #1:nrow(MeetingDays)
 
+Reading_Assignment <- c("Introduction",
+                        "",
+                        "Birth",
+                        "",
+                        "Blue Earth",
+                        "",
+                        "Living Earth",
+                        "",
+                        "Red Earth",
+                        "",
+                        "The 'Boring' Billion",
+                        "",
+                        "White Earth",
+                        "",
+                        "",
+                        "TBD",
+                        "",
+                        "Green Earth",
+                        "",
+                        "TBD",
+                        "",
+                        "TBD",
+                        "",
+                        "TBD",
+                        "",
+                        "TBD",
+                        "",
+                        "TBD",
+                        "The Future",
+                        "")
 
-MeetingDays <- bind_cols(MeetingDays, Lecture = Lecture_Topic)
+MeetingDays <- bind_cols(MeetingDays, Lecture = Lecture_Topic, Reading = Reading_Assignment)
 
 #### Grade table ####
 Grades <- tribble( ~ Grade,
                    ~ Range,
                    "A",
-                   "90-100",
+                   "90-100 %",
                    "B",
-                   "80-89",
+                   "80-89 %",
                    "C",
-                   "70-79",
+                   "70-79 %",
                    "D",
-                   "60-69",
+                   "60-69 %",
                    "F",
-                   "< 60")
+                   "< 60 %")
 
 ####Assignment weight table####
 Weights <- tribble(
                     ~ Item,
                     ~ Weight,
+                    ~ Graded,
                     "Discussion posts",
                     "25 %",
+                    "Effort",
                     "Gots and nots",
-                    "15 %",
+                    "10 %",
+                    "Completion",
                     "Tophat questions",
-                    "35 %",
+                    "15 %",
+                    "Completion (80%)/Correct (20%)",
+                    "Weekly Quizzes",
+                    "25 %",
+                    "Correct",
                     "Midterm Exam",
                     "10 %",
+                    "Correct",
                     "Final Exam",
-                    "15 %"
+                    "15 %",
+                    "Correct"
                   )
 
 
@@ -212,32 +251,46 @@ Hazen, Robert M. __The Story of Earth: The First 4.5 Billion Years, from Stardus
 ### Lectures and papers
 Both lecture slides and supplemental readings will be available via Canvas. Slides will generally be posted shortly before lecture.
 
+# Tophat
+
+We will be using Tophat to facilitate active learning during class. It is relatively inexpensive and can be used in other classes as well. If you encounter a hardship in activating it, please let me know as soon as possible.
+
+# Canvas
+
+We will be using Canvas for quizzes, discussions, and your gots-and-nots. These will be organized into weekly modules. New discussion posts will be available on Saturday and quizzes for the previous week will be due on Saturday. Quizzes will be accessible Thursday afternoon.
+
+\newpage
+
 ```{r Schedule, echo=FALSE}
 kable(MeetingDays[,c("Date",
                      "Class",
-                     "Week",
-                     "Lecture")
+                     "Lecture",
+                     "Reading")
                      ],
   caption = "Course Schedule.",
   align = c("l",
             "c",
             "c",
-            "l")
+            "r")
 )
 ```
+\newpage
 
 # Student conduct
 
 ## Attendance policy
 
--   Students who complete less than 50% of assignments/exams will be assigned a failing (F) grade.
+Students who complete less than 50% of assignments/exams will be assigned a failing (F) grade. Review the 'Attendance and Absences Policy', in the Undergraduate and Graduate Bulletin for attendance and absences policy.
 
--   Review the 'Attendance and Absences Policy', in the Undergraduate and Graduate Bulletin for attendance and absences policy
+Lectures can be attened in person or via Zoom. Recordings will be made available by request.
 
 ## Grading
 
 ### Late policy
 I will be grading assignments in batches to provide fair assessment to everyone. This means late work can be disruptive. The penalty for late work will be 20% a day after the first 24 hours late. If you have a reason (illness, etc.) the late policy will be relaxed.
+
+### Dropped grades
+Two weeks worth of your lowest scores will be dropped at the end of the semester. This means that the lowest two quiz scores, discussion posts, and Tophat questions will be removed when calculating your final grade.
 
 ### Extra credit
 Extra credit may be made available throughout the semester at my discretion.
@@ -255,8 +308,6 @@ kable(Weights,
       align = c("l", "r"))
 ```
 
-\newpage
-
 <!-- The sections of code below that include "child=..." are drawing from seperate .md documents. These allow for updating text in a single spot for use in multiple syllabus documents. -->
 ```{r Academic disruption, child='general_components/academic_disruption.md'}
 
@@ -269,7 +320,6 @@ kable(Weights,
 ## Course and Teacher evaluation
 Student input for the purpose of course improvement is taken very seriously and will potentially be done periodically. Please take the time to evaluate this course and the instructor, especially at the end of the semester. Evaluations will in no way affect your grade.
 
-\newpage
 # Safety
 
 ## Building Safety
@@ -283,7 +333,6 @@ Move away from external windows to the hallway in the basement, first, or second
 ### Active Shooter Incident
 "Get Out" of the building as long as they can do so safely. Once you have exited the building and are at a safe location, "Call Out" to law enforcement using 911, USA Police at 460-6312, or press the Emergency button on your LiveSafe Mobile Safety App. If you can't get out, "Shelter in Place" in a secure location that is away from windows and doors, preferably a location that can be locked and barricaded.
 
-\newpage
 
 # Campus resources
 
