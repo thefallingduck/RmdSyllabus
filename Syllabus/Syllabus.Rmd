@@ -148,8 +148,9 @@ Lecture_Topic <- c("Introduction",
   1:nrow(MeetingDays)
 
 Week_Reading <- c("")
+Lab_Meeting <- c("")
 
-MeetingDays <- bind_cols(MeetingDays, Lecture = Lecture_Topic, Reading = Week_Reading)
+MeetingDays <- bind_cols(MeetingDays, Lecture = Lecture_Topic, Lab = Lab_Meeting)
 
 #### Grade table ####
 Grades <- tribble( ~ Grade,
@@ -239,12 +240,14 @@ Both lecture slides and papers will be available via Canvas. Slides will be post
 kable(MeetingDays[,c("Date",
                      "Class",
                      "Week",
-                     "Lecture")
+                     "Lecture",
+                     "Lab")
                      ],
   caption = "Course Schedule.",
   align = c("l",
             "c",
             "c",
+            "l",
             "l")
 )
 ```
