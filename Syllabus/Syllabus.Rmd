@@ -118,37 +118,65 @@ MeetingDays$Class <- 1:nrow(MeetingDays)
 Lecture_Topic <- c("Introduction",
                    "Weathering",
                    "Erosion",
+                   "Petrology",
+                   "Carbonate Rocks",
                    "Abstract Writing",
                    "Semester Project",
-                   "Carbonate Rocks",
-                   "Fluid Flow Dynamics 1",
-                   "Fluid Flow Dynamics 2",
+                   "Fluid Flow Dynamics",
+                   "Fluid Flow Dynamics",
                    "Gravity Flows",
+                   "Turbidity current",
+                   "Sed. Structures",
+                   "Depositional Environment",
                    "Facies",
-                   "Turbidity currents",
-                   "Sedimentary Structures",
-                   "Depositional Environments",
-                   "Facies and Depositional Environments",
                    "Midterm review",
                    "Midterm",
-                   "Rivers, Fans, and Plains 1",
-                   "Rivers, Fans, and Plains 2",
+                   "Rivers, Fans, and Plains",
+                   "Rivers, Fans, and Plains",
                    "Lacustrian Environments",
                    "Eolian Environments",
                    "Glacial Environments",
                    "Deltas 1",
                    "Deltas 2",
-                   "Shallow Marine Environments",
-                   "Marine Environments",
-                   "Carbonate Environments",
-                   "Carbonate Diagenesis",
+                   "Shallow Marine Environment",
+                   "Marine Environment",
+                   "Carbonate Environment",
+                   "Diagenesis",
                    "Climate and Sedimentology",
                    "Proposal Presentations"
                    )
   1:nrow(MeetingDays)
 
 Week_Reading <- c("")
-Lab_Meeting <- c("")
+Lab_Meeting <- c("Clastic Rocks",
+                 "",
+                 "Carbonate Rocks",
+                 "",
+                 "Petrology",
+                 "NO LAB",
+                 "",
+                 "Wave flume",
+                 "",
+                 "Turbidity",
+                 "",
+                 "Sed. Structures",
+                 "",
+                 "Figure Making",
+                 "",
+                 "NO LAB",
+                 "",
+                 "Stream table",
+                 "",
+                 "Maps",
+                 "",
+                 "Terrestrial Dep. Env.",
+                 "",
+                 "NO LAB",
+                 "",
+                 "Dep. Env. Summary",
+                 "",
+                 "",
+                 "Presentations")
 
 MeetingDays <- bind_cols(MeetingDays, Lecture = Lecture_Topic, Lab = Lab_Meeting)
 
@@ -238,7 +266,6 @@ Both lecture slides and papers will be available via Canvas. Slides will be post
 
 ```{r Schedule, echo=FALSE}
 kable(MeetingDays[,c("Date",
-                     "Class",
                      "Week",
                      "Lecture",
                      "Lab")
@@ -246,9 +273,8 @@ kable(MeetingDays[,c("Date",
   caption = "Course Schedule.",
   align = c("l",
             "c",
-            "c",
             "l",
-            "l")
+            "r")
 )
 ```
 
@@ -320,6 +346,40 @@ Short outline of proposed project that answers the following questions. (Based o
 6) What results are likely?\
 7) How can results answer the question?\
 8) What does the answer tell us about the broader field?
+
+### Proposal introduction draft
+
+Carefully explain the knowledge that lead you to develop this hypothesis and clearly outline the hypothesis
+to be tested. Consider these questions:
+- What do we know about the question you are interested in studying?\
+- What background knowledge do people need to assess if your hypothesis can be tested?\
+- How could auxiliary hypotheses be tested?\
+- What specific data are needed to test the hypothesis and is there a clear distinction between the hypothesis and alternatives?
+
+### Proposal methods draft
+
+This section outlines the required samples, locations, and data that must be collected to test your hypothesis.
+Consider these questions:\
+- Where will samples or field observations come from?\
+- Will data be collected in the field or in a lab?\
+- What instruments are needed to perform the measurements?\
+- What difficulties may come from the interpretations of the measurements?\
+- How many analyses are needed?
+
+### Proposal intellectual merit draft
+
+Create a section that specifically states how this proposal contributes to the field of research and is potentially
+transformative (although this is not as important for the assignment.) Consider the following questions:\
+- What will the potential next steps be beyond testing this hypothesis?\
+- How could the findings of this work have impacts on other areas of research?
+
+### Proposal broader impacts draft
+
+This section summarizes how your work will benefit society. This could be through applications of your
+discovery, training of individuals, or communication to people outside of the scientific community.\
+- Does the research have an economic or societal benefit?\
+- Does the work require the training of individuals?\
+- How would this work benefit the university or community?
 
 ### Project first draft
 
