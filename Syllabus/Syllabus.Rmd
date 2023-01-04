@@ -1,6 +1,6 @@
 ---
 title: 'GY111: Physical Geology'
-date: "Spring 2022"
+date: "Spring 2023"
 output:
   pdf_document:
     keep_tex: yes
@@ -16,8 +16,8 @@ geometry: margin=1in
 instructor:
 - name: Dr. Benjamin J. Linzmeier
   email: blinzmeier@southalabama.edu
-  prefered_contact: Canvas LMS messages
-  officehours: 1 – 3 PM Mo, 4 – 5 PM Tu, 10:30 AM – 1:30 PM Fr
+  prefered_contact: Canvas messages
+  officehours: 1 – 3 PM Mo, Tu \newline 10 AM – 12 PM Fr
   office: Life Science Building room 344
   correspondence_policy: Within 24 hours on weekdays; 48 hours on weekends
 
@@ -54,10 +54,10 @@ library(knitr)
 Days <- c("Monday", "Wednesday", "Friday")
 
 #Semester start date for classes as YYYY/M/D.
-SemesterStart <- as.Date("2022/1/10")
+SemesterStart <- as.Date("2023/1/09")
 
 #Semester end date for classes as YYYY/M/D.
-SemesterEnd <- as.Date("2022/4/29")
+SemesterEnd <- as.Date("2023/4/28")
 
 #Fall break start and stop date.
 FallBreak <-
@@ -70,8 +70,8 @@ FallBreak <-
 #Spring break start and stop date.
 SpringBreak <-
   seq.Date(
-    from = as.Date("2022/02/28"),
-    to = as.Date("2022/03/06"),
+    from = as.Date("2023/03/06"),
+    to = as.Date("2023/03/12"),
     by = "day"
   )
 
@@ -121,10 +121,13 @@ Lecture_Topic <- c("Introduction and overview",
                    "Nature of Geology",
                    "Geology as a science",
                    "Geological time",
-                   "Geological timescale",
+                   "Geological time",
                    "Continental drift",
                    "Plate tectonics",
                    "Earth's structure",
+                   "Earthquakes",
+                   "Earthquakes",
+                   "Earthquakes",
                    "Minerals",
                    "Minerals",
                    "Minerals",
@@ -133,7 +136,7 @@ Lecture_Topic <- c("Introduction and overview",
                    "Igneous Rocks",
                    "Volcanoes",
                    "Volcanoes",
-                   "Volcanic hazards",
+                   "Midterm",
                    "Metamorphism",
                    "Deformation and Landscapes",
                    "Deformation",
@@ -143,24 +146,21 @@ Lecture_Topic <- c("Introduction and overview",
                    "Planetary Geology",
                    "Geobiology",
                    "Geobiology",
-                   "Seafloor and continental margins",
-                   "Seafloor and continental margins",
-                   "Seafloor and continental margins",
-                   "Hydrologic Cycle",
+                   "Energy and Mineral Resources",
+                   "Energy and Mineral Resources",
+                   "Energy and Mineral Resources",
                    "Groundwater",
-                   "Energy resources",
-                   "Earth Resources",
-                   "Energy Resources",
-                   "Mineral Resources",
+                   "Groundwater",
+                   "Groundwater",
                    "Streams and Flooding",
                    "Streams and Flooding",
                    "Streams and Flooding",
+                   "The Climate System",
+                   "The Climate System",
+                   "The Climate System",
                    "Coasts, Glaciers, and Changing sea level",
                    "Coasts, Glaciers, and Changing sea level",
-                   "Coasts, Glaciers, and Changing sea level",
-                   "The Climate system",
-                   "Climate and Geology",
-                   "Review and synthesis"
+                   "Coasts, Glaciers, and Changing sea level"
                    )
 
 
@@ -186,14 +186,16 @@ Weights <- tribble(
                     ~ Weight,
                     "Discussion posts",
                     "~12 %",
-                    "In-class work",
+                    "Participation",
                     "~12 %",
                     "Readings",
-                    "~42 %",
+                    "~40 %",
                     "Quizzes",
                     "~17 %",
+                    "Midterm Exam",
+                    "~9 %",
                     "Final Exam",
-                    "~17 %"
+                    "~10 %"
                   )
 
 
@@ -204,8 +206,9 @@ Weights <- tribble(
 How does the Earth work as a system? In this class we will learn the basics of the science of Geology with a focus on physical processes and materials. We will cover major topics including: plate tectonics, mineral chemistry, the rock cycle, geological time, sedimentary processes, climate change, and geological map reading.
 
 # Important Dates
-January 17th - Last day to drop without WD\
-April 1st - Last day to drop or withdraw\
+January 15th - Last day to drop without WD\
+April 7th - Last day to drop or withdraw\
+May 3rd, 8-10 AM - In person final exam\
 See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.
 
 # Course goals
