@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.30)  1 AUG 2023 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.30)  1 AUG 2023 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -424,42 +424,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--129
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--154
-
- []
-
 [1
 
 {c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 187.
+(hyperref)                than one, level fixed on input line 194.
 
-[2] [3] [4]
-Overfull \hbox (21.33542pt too wide) in paragraph at lines 356--358
+[2] [3]
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 280.
+(c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+) [4]
+Overfull \hbox (2.93954pt too wide) in paragraph at lines 377--379
+\T1/ppl/m/n/10.95 Meeting with me or 2-6 sen-tence de-scrip-tion of the re-search project you plan on do-ing this semester. 
+ []
+
+[5] [6]
+Overfull \hbox (21.33542pt too wide) in paragraph at lines 445--447
 []\T1/ppl/m/n/10.95 Violation of aca-demic con-duct pol-icy may re-sult in re-ceiv-ing 0 credit for the af-fected exam/assignment. 
  []
 
-[5] [6] 
+[7] [8] [9] [10] [11] 
 AED: lastpage setting LastPage
-[7] (./Syllabus.aux)
+[12] (./Syllabus.aux)
 Package rerunfilecheck Info: File `Syllabus.out' has not changed.
-(rerunfilecheck)             Checksum: 56005F3E47E54567DDA8B43F9CF074D4;3701.
+(rerunfilecheck)             Checksum: FB9E64E15D5FF913C5C8E3D20688553F;8382.
  ) 
 Here is how much of TeX's memory you used:
- 10156 strings out of 478025
- 162436 string characters out of 5838745
+ 10298 strings out of 478025
+ 164982 string characters out of 5838745
  1863299 words of memory out of 5000000
- 30098 multiletter control sequences out of 15000+600000
- 538788 words of font info for 82 fonts, out of 8000000 for 9000
+ 30175 multiletter control sequences out of 15000+600000
+ 539342 words of font info for 84 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  63i,12n,67p,1197b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Syllabus.pdf (7 pages, 75120 bytes).
+Output written on Syllabus.pdf (12 pages, 86855 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
- 74 named destinations out of 1000 (max. 500000)
- 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 411 PDF objects out of 1000 (max. 8388607)
+ 387 compressed objects within 4 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 457 words of extra memory for PDF output out of 10000 (max. 10000000)
 
