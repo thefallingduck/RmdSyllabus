@@ -1,6 +1,6 @@
 ---
-title: 'GY112: Earth History'
-date: "Fall 2023"
+title: 'GY401W: Invertebrate paleontology'
+date: "Spring 2024"
 output:
   pdf_document:
     keep_tex: yes
