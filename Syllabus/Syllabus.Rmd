@@ -1,6 +1,6 @@
 ---
 title: 'GY112: Earth History'
-date: "Fall 2022"
+date: "Fall 2023"
 output:
   pdf_document:
     keep_tex: yes
@@ -30,7 +30,7 @@ instructor:
 #    office: OfficeNumber
 #    sections: '301'
    
-classroom: 'LCSB 0119	'
+classroom: 'ELCSB 0119	'
 classhours: 9:30 - 10:45 am	TTh
 #labroom: 'LCSB 337'
 #labhours: 1:25 pm - 3:55 pm	W
@@ -54,24 +54,24 @@ library(knitr)
 Days <- c("Tuesday", "Thursday")
 
 #Semester start date for classes as YYYY/M/D.
-SemesterStart <- as.Date("2022/8/16")
+SemesterStart <- as.Date("2023/8/22")
 
 #Semester end date for classes as YYYY/M/D.
-SemesterEnd <- as.Date("2022/12/2")
+SemesterEnd <- as.Date("2023/12/8")
 
 #Fall break start and stop date.
 FallBreak <-
   seq.Date(
-    from = as.Date("2022/10/6"),
-    to = as.Date("2022/10/9"),
+    from = as.Date("2023/10/12"),
+    to = as.Date("2023/10/15"),
     by = "day"
   )
 
 #Spring break start and stop date.
 SpringBreak <-
   seq.Date(
-    from = as.Date("2022/02/28"),
-    to = as.Date("2022/03/06"),
+    from = as.Date("2024/03/04"),
+    to = as.Date("2024/03/10"),
     by = "day"
   )
 
@@ -227,11 +227,11 @@ Weights <- tribble(
 What can studying the history of Earth tell us about the future and the present? In this course we will walk though major events in the history of our planet and dive into the processes and peculiarities that caused them. We will connect these events to places that matter to us and learn about how their occurrence shapes life today. By the end of the semester you will have a broad understanding of the science of Geology and its application to studying how the Earth works.
 
 # Important Dates
-August 23rd - Last day to drop without WD\
-October 4th - Midterm\
-October 28th - Last day to drop or withdraw.
+August 29th - Last day to drop without WD\
+October 10th - Midterm\
+November 3rd - Last day to drop or withdraw.
 See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.\
-December 8th - Final 10:30 am - 12:30 pm\
+December 14th - Final 10:30 am - 12:30 pm\
 
 # Course goals
 
