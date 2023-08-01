@@ -195,25 +195,16 @@ Grades <- tribble( ~ Grade,
 Weights <- tribble(
                     ~ Item,
                     ~ Weight,
-                    ~ Graded,
-                    "Discussion posts",
-                    "25 %",
-                    "Effort",
-                    "Gots and nots",
+                    "Writing scaffolding",
                     "10 %",
-                    "Completion",
-                    "Tophat questions",
-                    "15 %",
-                    "Completion (80%)/Correct (20%)",
-                    "Weekly Quizzes",
-                    "25 %",
-                    "Correct",
+                    "Semester Project",
+                    "30 %",
+                    "Labratory Assignments",
+                    "30 %",
                     "Midterm Exam",
                     "10 %",
-                    "Correct",
                     "Final Exam",
-                    "15 %",
-                    "Correct"
+                    "20 %"
                   )
 
 
