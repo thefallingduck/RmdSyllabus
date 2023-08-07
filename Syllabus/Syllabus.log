@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.6)  1 OCT 2022 14:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.30)  7 AUG 2023 11:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Syllabus.tex
 (./Syllabus.tex
-LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-08-30> (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-01-24> (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -18,9 +18,9 @@ File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count190
 \c@figure=\count191
 \c@table=\count192
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
@@ -34,14 +34,14 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@cnth=\count193
 \Gm@cntv=\count194
 \c@Gm@tempcnt=\count195
-\Gm@bindingoffset=\dimen139
-\Gm@wd@mp=\dimen140
-\Gm@odd@mp=\dimen141
-\Gm@even@mp=\dimen142
-\Gm@layoutwidth=\dimen143
-\Gm@layoutheight=\dimen144
-\Gm@layouthoffset=\dimen145
-\Gm@layoutvoffset=\dimen146
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
 \Gm@dimlist=\toks17
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
@@ -50,21 +50,21 @@ Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS)
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \c@tracingmulticols=\count196
 \mult@box=\box51
-\multicol@leftmargin=\dimen147
+\multicol@leftmargin=\dimen149
 \c@unbalance=\count197
 \c@collectmore=\count198
 \doublecol@number=\count199
 \multicoltolerance=\count266
 \multicolpretolerance=\count267
-\full@width=\dimen148
-\page@free=\dimen149
-\premulticols=\dimen150
-\postmulticols=\dimen151
-\multicolsep=\skip49
-\multicolbaselineskip=\skip50
+\full@width=\dimen150
+\page@free=\dimen151
+\premulticols=\dimen152
+\postmulticols=\dimen153
+\multicolsep=\skip50
+\multicolbaselineskip=\skip51
 \partial@page=\box52
 \last@line=\box53
-\maxbalancingoverflow=\dimen152
+\maxbalancingoverflow=\dimen154
 \mult@rightbox=\box54
 \mult@grightbox=\box55
 \mult@firstbox=\box56
@@ -108,27 +108,27 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \c@minrows=\count268
 \c@columnbadness=\count269
 \c@finalcolumnbadness=\count270
-\last@try=\dimen153
-\multicolovershoot=\dimen154
-\multicolundershoot=\dimen155
+\last@try=\dimen155
+\multicolovershoot=\dimen156
+\multicolundershoot=\dimen157
 \mult@nat@firstbox=\box94
 \colbreak@box=\box95
 \mc@col@check@num=\count271
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/abstract/abstract.sty
 Package: abstract 2009/06/08 v1.2a configurable abstracts
-\abstitleskip=\skip51
-\absleftindent=\skip52
-\absrightindent=\skip53
-\absparindent=\skip54
-\absparsep=\skip55
+\abstitleskip=\skip52
+\absleftindent=\skip53
+\absrightindent=\skip54
+\absparindent=\skip55
+\absparsep=\skip56
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip56
-\LTright=\skip57
-\LTpre=\skip58
-\LTpost=\skip59
+\LTleft=\skip57
+\LTright=\skip58
+\LTpre=\skip59
+\LTpost=\skip60
 \LTchunksize=\count272
-\LTcapwidth=\dimen156
+\LTcapwidth=\dimen158
 \LT@head=\box96
 \LT@firsthead=\box97
 \LT@foot=\box98
@@ -141,50 +141,50 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LT@p@ftn=\toks18
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen157
-\lightrulewidth=\dimen158
-\cmidrulewidth=\dimen159
-\belowrulesep=\dimen160
-\belowbottomsep=\dimen161
-\aboverulesep=\dimen162
-\abovetopsep=\dimen163
-\cmidrulesep=\dimen164
-\cmidrulekern=\dimen165
-\defaultaddspace=\dimen166
+\heavyrulewidth=\dimen159
+\lightrulewidth=\dimen160
+\cmidrulewidth=\dimen161
+\belowrulesep=\dimen162
+\belowbottomsep=\dimen163
+\aboverulesep=\dimen164
+\abovetopsep=\dimen165
+\cmidrulesep=\dimen166
+\cmidrulekern=\dimen167
+\defaultaddspace=\dimen168
 \@cmidla=\count277
 \@cmidlb=\count278
-\@aboverulesep=\dimen167
-\@belowrulesep=\dimen168
+\@aboverulesep=\dimen169
+\@belowrulesep=\dimen170
 \@thisruleclass=\count279
 \@lastruleclass=\count280
-\@thisrulewidth=\dimen169
+\@thisrulewidth=\dimen171
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count281
 )) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box101
-\beforetitleunit=\skip60
-\aftertitleunit=\skip61
-\ttl@plus=\dimen170
-\ttl@minus=\dimen171
+\beforetitleunit=\skip61
+\aftertitleunit=\skip62
+\ttl@plus=\dimen172
+\ttl@minus=\dimen173
 \ttl@toksa=\toks19
-\titlewidth=\dimen172
-\titlewidthlast=\dimen173
-\titlewidthfirst=\dimen174
+\titlewidth=\dimen174
+\titlewidthlast=\dimen175
+\titlewidthfirst=\dimen176
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip62
-\thanksmargin=\skip63
-\droptitle=\skip64
+\thanksmarkwidth=\skip63
+\thanksmargin=\skip64
+\droptitle=\skip65
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 112.
@@ -195,20 +195,20 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks20
 \inpenc@posthook=\toks21
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and footers
-\f@nch@headwidth=\skip65
-\f@nch@O@elh=\skip66
-\f@nch@O@erh=\skip67
-\f@nch@O@olh=\skip68
-\f@nch@O@orh=\skip69
-\f@nch@O@elf=\skip70
-\f@nch@O@erf=\skip71
-\f@nch@O@olf=\skip72
-\f@nch@O@orf=\skip73
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip66
+\f@nch@O@elh=\skip67
+\f@nch@O@erh=\skip68
+\f@nch@O@olh=\skip69
+\f@nch@O@orh=\skip70
+\f@nch@O@elf=\skip71
+\f@nch@O@erf=\skip72
+\f@nch@O@olf=\skip73
+\f@nch@O@orf=\skip74
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
+Package: hyperref 2022-11-13 v7.00u Hypertext links for LaTeX
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
@@ -236,11 +236,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count282
 )
-\@linkdim=\dimen175
+\@linkdim=\dimen177
 \Hy@linkcounter=\count283
 \Hy@pagecounter=\count284
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2022-06-20 v7.00s Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2022-11-13 v7.00u Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
@@ -250,7 +250,7 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count285
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2022-11-13 v7.00u Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
@@ -261,29 +261,29 @@ Package hyperref Info: Hyper index ON on input line 4170.
 Package hyperref Info: Plain pages OFF on input line 4177.
 Package hyperref Info: Backreferencing OFF on input line 4182.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4408.
+Package hyperref Info: Bookmarks ON on input line 4410.
 \c@Hy@tempcnt=\count286
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4746.
-\XeTeXLinkMargin=\dimen176
+LaTeX Info: Redefining \url on input line 4748.
+\XeTeXLinkMargin=\dimen178
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count287
-\Field@Width=\dimen177
-\Fld@charsize=\dimen178
-Package hyperref Info: Hyper figures OFF on input line 6024.
-Package hyperref Info: Link nesting OFF on input line 6029.
-Package hyperref Info: Hyper index ON on input line 6032.
-Package hyperref Info: backreferencing OFF on input line 6039.
-Package hyperref Info: Link coloring OFF on input line 6044.
-Package hyperref Info: Link coloring with OCG OFF on input line 6049.
-Package hyperref Info: PDF/A mode OFF on input line 6054.
+\Field@Width=\dimen179
+\Fld@charsize=\dimen180
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
@@ -294,7 +294,7 @@ package with kernel methods
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2022-06-20 v7.00s Hyperref driver for pdfTeX
+File: hpdftex.def 2022-11-13 v7.00u Hyperref driver for pdfTeX
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
@@ -308,7 +308,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip74
+\Hy@SectionHShift=\skip75
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -316,7 +316,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx))
@@ -327,9 +327,9 @@ Package hyperref Warning: Option `bookmarks' has already been used,
 
 Package hyperref Info: Option `colorlinks' set `true' on input line 84.
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
+Package: setspace 2022/12/04 v6.7b set line spacing
 ) (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-08-30 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count293
 \l__pdf_internal_box=\box102
 ) (./Syllabus.aux)
@@ -387,7 +387,7 @@ LaTeX Font Info:    ... okay on input line 101.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\big@size=\dimen179
+\big@size=\dimen181
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 101.
@@ -434,10 +434,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--154
 {c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 187.
+(hyperref)                than one, level fixed on input line 185.
 
 [2] [3] [4]
-Overfull \hbox (21.33542pt too wide) in paragraph at lines 356--358
+Overfull \hbox (21.33542pt too wide) in paragraph at lines 354--356
 []\T1/ppl/m/n/10.95 Violation of aca-demic con-duct pol-icy may re-sult in re-ceiv-ing 0 credit for the af-fected exam/assignment. 
  []
 
@@ -448,15 +448,15 @@ Package rerunfilecheck Info: File `Syllabus.out' has not changed.
 (rerunfilecheck)             Checksum: 56005F3E47E54567DDA8B43F9CF074D4;3701.
  ) 
 Here is how much of TeX's memory you used:
- 10142 strings out of 477035
- 162204 string characters out of 5826727
- 519051 words of memory out of 5000000
- 31074 multiletter control sequences out of 15000+600000
- 495760 words of font info for 78 fonts, out of 8000000 for 9000
+ 10156 strings out of 478025
+ 162436 string characters out of 5838745
+ 1863299 words of memory out of 5000000
+ 30098 multiletter control sequences out of 15000+600000
+ 538788 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,12n,67p,1197b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,12n,67p,1197b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Syllabus.pdf (7 pages, 74970 bytes).
+Output written on Syllabus.pdf (7 pages, 73986 bytes).
 PDF statistics:
  239 PDF objects out of 1000 (max. 8388607)
  221 compressed objects within 3 object streams
