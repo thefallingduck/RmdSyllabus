@@ -7,33 +7,21 @@ output:
     fig_caption: yes
     latex_engine: pdflatex
     template: Syllabus_template.tex
+  word_document: default
   html_document:
     df_print: paged
 geometry: margin=1in
-
-#Fill this in with any number of instructors. It uses a two column layout with a column break after each instructor.
-
 instructor:
 - name: Dr. Benjamin J. Linzmeier
   email: blinzmeier@southalabama.edu
   prefered_contact: Canvas LMS messages
-  officehours: 10:00 am - 12:00 pm MW \newline 1:00 - 3:00 pm T
+  officehours: "2:00 - 4:00 pm MTu \\newline 9:00 - 11:00 am F"
   office: Life Science Building room 344
   correspondence_policy: Within 24 hours on weekdays; 48 hours on weekends
-
-# You can include multiple entries for a teaching assistant by filling in all these options below. Currently this is set to populate two columns on the syllabus but there is not an even column break inserted.
-
-# teachingassistant:
-#  - name: Filler
-#    email: filler@fill.com
-#    officehours: W T
-#    office: OfficeNumber
-#    sections: '301'
-   
-classroom: 'LCSB 337'
-classhours: 12:20 - 1:10 pm	MW
-labroom: 'LCSB 337'
-labhours: 1:25 pm - 3:55 pm	W
+classroom: LCSB 337
+classhours: "12:20 - 1:10 pm\tMWF"
+labroom: LCSB 337
+labhours: "1:25 pm - 3:55 pm\tW"
 fontfamily: mathpazo
 fontsize: 11pt
 header-includes: \linespread{1.05}
@@ -45,33 +33,34 @@ library(timeDate)
 library(tibble)
 library(dplyr)
 library(knitr)
+library(kableExtra)
 
 #This code chunk sets up a table of meeting days for the course.
 #You can set days of the week for course meetings (e.g. Monday and Wednesday).
 #Semester start and end dates are selected and then university holidays like spring break are specified.
 
 #Days of the week that the course meets. Must be full day name in quotes.
-Days <- c("Monday", "Wednesday")
+Days <- c("Monday", "Wednesday", "Friday")
 
 #Semester start date for classes as YYYY/M/D.
-SemesterStart <- as.Date("2022/8/16")
+SemesterStart <- as.Date("2023/8/22")
 
 #Semester end date for classes as YYYY/M/D.
-SemesterEnd <- as.Date("2022/12/2")
+SemesterEnd <- as.Date("2023/12/8")
 
 #Fall break start and stop date.
 FallBreak <-
   seq.Date(
-    from = as.Date("2022/10/6"),
-    to = as.Date("2022/10/9"),
+    from = as.Date("2023/10/12"),
+    to = as.Date("2023/10/15"),
     by = "day"
   )
 
 #Spring break start and stop date.
 SpringBreak <-
   seq.Date(
-    from = as.Date("2022/02/28"),
-    to = as.Date("2022/03/06"),
+    from = as.Date("2024/03/4"),
+    to = as.Date("2024/03/10"),
     by = "day"
   )
 
@@ -80,9 +69,11 @@ SemesterDays <-
   seq.Date(from = SemesterStart, to = SemesterEnd, by = "day")
 
 #Add day before Thanksgiving.
-DayBeforeThnks<-as.Date(holiday(
+DayBeforeThnks<-c(as.Date(holiday(
     year = getRmetricsOptions("currentYear"),
-    Holiday = c("USThanksgivingDay")))-1
+    Holiday = c("USThanksgivingDay")))-1, as.Date(holiday(
+    year = getRmetricsOptions("currentYear"),
+    Holiday = c("USThanksgivingDay")))+1)
 
 #Full list of holidays that there are no classes including breaks.
 Holidays <-
@@ -116,69 +107,171 @@ MeetingDays$Class <- 1:nrow(MeetingDays)
 #Replace this with c("Lecture topic 1",...,"Lecture topic N") to fill in table.
 
 Lecture_Topic <- c("Introduction",
+                   "Project and Writing",
                    "Weathering",
                    "Erosion",
-                   "Petrology",
-                   "Carbonate Rocks",
-                   "Sedimentary Petrology",
-                   "Science writing",
+                   "Writing behavior",
+                   "Rock cycle and clastics",
+                   "Abstracts",
                    "Fluid Flow Dynamics",
                    "Fluid Flow Dynamics",
-                   "Gravity Flows",
-                   "Turbidity current",
+                   "Kinds of reading",
+                   "Gravity flows",
                    "Sed. Structures",
-                   "Depositional Environment",
-                   "Facies",
+                   "Felling your story",
+                   "Continental deposits",
+                   "Continental deposits",
+                   "Parts to a paper",
+                   "Marine deposits",
+                   "Marine deposits",
+                   "Revision",
                    "Midterm review",
                    "Midterm",
-                   "Rivers, Fans, and Plains",
-                   "Rivers, Fans, and Plains",
-                   "Lacustrian Environments",
-                   "Eolian Environments",
-                   "Glacial Environments",
-                   "Deltas 1",
-                   "Deltas 2",
-                   "Shallow Marine Environment",
-                   "Marine Environment",
-                   "Carbonate Environment",
-                   "Diagenesis",
-                   "Climate and Sedimentology",
-                   "Proposal Presentations"
+                   "Presentations",
+                   "Presentations",
+                   "Conferences",
+                   "Relative Dating",
+                   "Facies",
+                   "NSF Proposals",
+                   "Radiometric dating",
+                   "Strat columns",
+                   "Specious barriers to writing",
+                   "Base level and strat",
+                   "Sed Basins",
+                   "Diverse writing",
+                   "Sequence Strat",
+                   "Sequence Strat",
+                   "Draft discussion",
+                   "Correlation",
+                   "Subsurface strat",
+                   "Subsurface strat",
+                   "Audiences",
+                   "Final review",
+                   "Project presentations",
+                   "Lessons learned"
                    )
-  1:nrow(MeetingDays)
+  #1:nrow(MeetingDays)
 
-Week_Reading <- c("")
-Lab_Meeting <- c("NO LAB",
-                 "",
-                 "Clastic Rocks",
-                 "",
-                 "Carbonate Rocks",
-                 "Petrology",
-                 "",
-                 "Wave flume",
-                 "",
-                 "Turbidity",
-                 "",
-                 "Sed. Structures",
-                 "",
-                 "Figure Making",
-                 "",
-                 "NO LAB",
-                 "",
-                 "Stream table",
-                 "",
-                 "Maps",
-                 "",
-                 "Terrestrial Dep. Env.",
-                 "",
-                 "NO LAB",
-                 "",
-                 "Dep. Env. Summary",
-                 "",
-                 "",
-                 "Presentations")
+Week_Reading <- c("",
+                   "Part 1",
+                   "N. 6 or B. 1",
+                   "",
+                   "Ch. 3&4",
+                   "B. 3 or N. 2 +Digital",
+                   "Ch. 9",
+                   "B. 2 or N. 4",
+                   "",
+                   "Ch. 28",
+                   "B. 2.4 or N 4.2/.3",
+                   "",
+                   "Ch. 7",
+                   "B. 8 or N. 7-10",
+                   "",
+                   "Ch. 8",
+                   "B. 10-11 or N. 14-16",
+                   "",
+                   "Ch. 23",
+                   "",
+                   "",
+                   "",
+                   "",
+                   "TBD",
+                   "B. 12 or N. 19",
+                   "",
+                   "NSF Proposals",
+                   "B. 15 or N. 21",
+                   "",
+                   "Specious barriers to writing",
+                   "Wheeler 1964",
+                   "B. 16 or N. 24",
+                   "Ch. 26",
+                   "B. 13 or N. 23",
+                   "",
+                   "",
+                   "B. 12 or N. 19",
+                   "B. 13 or N. 22",
+                   "",
+                   "Ch. 24",
+                   "",
+                   "",
+                   "Part VII"
+                   )
 
-MeetingDays <- bind_cols(MeetingDays, Lecture = Lecture_Topic, Lab = Lab_Meeting)
+Lab_Meeting <- c("Field",
+                   "",
+                   "",
+                   "Sand description",
+                   "",
+                   "Clastic ID",
+                   "",
+                   "",
+                   "Flume",
+                   "",
+                   "",
+                   "Dauphin Island",
+                   "",
+                   "",
+                   "Carbonate ID",
+                   "",
+                   "",
+                   "Petrography",
+                   "",
+                   "",
+                   "No lab",
+                   "",
+                   "Project figure",
+                   "",
+                   "",
+                   "Stedman's Landing",
+                   "",
+                   "",
+                   "Baldwin Ct Outcrop",
+                   "",
+                   "",
+                   "QGIS Map",
+                   "",
+                   "",
+                   "Correlation",
+                   "",
+                   "",
+                   "",
+                   "Log interpretation",
+                   "",
+                   "",
+                   "Presentations",
+                   ""
+                   )
+                 #  "NO LAB",
+                 # "",
+                 # "Clastic Rocks",
+                 # "",
+                 # "Carbonate Rocks",
+                 # "Petrology",
+                 # "",
+                 # "Wave flume",
+                 # "",
+                 # "Turbidity",
+                 # "",
+                 # "Sed. Structures",
+                 # "",
+                 # "Figure Making",
+                 # "",
+                 # "NO LAB",
+                 # "",
+                 # "Stream table",
+                 # "",
+                 # "Maps",
+                 # "",
+                 # "Terrestrial Dep. Env.",
+                 # "",
+                 # "NO LAB",
+                 # "",
+                 # "Dep. Env. Summary",
+                 # "",
+                 # "",
+                 # "Presentations")
+
+MeetingDays <- bind_cols(Date = MeetingDays$Date, Lecture = Lecture_Topic, Lab = Lab_Meeting, Reading = Week_Reading)
 
 #### Grade table ####
 Grades <- tribble( ~ Grade,
@@ -215,17 +308,17 @@ Weights <- tribble(
 
 # Course description
 
-Why does Sedimentology (GY306[W]) matter? Sediments house the record of climate at Earth's surface, influence climate through feedbacks, and house important resources. In this course you will learn how sediments are formed, moved, and preserved in the rock record. We will discuss the way that paleoenvironments are interpreted from observations of rocks on multiple scales. In addition, we will work together to improve your writing skills with a focus on a few of the genres of writing you may be expected to do as professional geologists.
+Why do Sedimentology and Stratigraphy (GY306[W]) matter? Sediments house the record of climate at Earth's surface, influence climate through feedbacks, and house important resources. In this course you will learn how sediments are formed, moved, and preserved in the rock record. We will discuss the way that paleoenvironments are interpreted from observations of rocks on multiple scales. In addition, we will work together to improve your writing skills with a focus on a few of the genres of writing you may be expected to do as professional geologists.
 
 # Writing requirements
 
 For this class to fulfill the (W) requirements of USA, you will be doing a semester-long research project in an area related to sedimentology. To build your skills in discipline-specific writing, we will be doing smaller writing assignments throughout the semester. The final projects will be peer-reviewed, revised, and then submitted for final grading and assessment.
 
 # Important Dates
-August 23rd - Last day to drop without WD\
-October 10th - Midterm exam\
-October 28th - Last day to drop or withdraw. See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.\
-December 5th 1:00 to 3:00 pm - Final Exam
+August 29th - Last day to drop without WD\
+October 11th - Midterm exam\
+November 3rd - Last day to drop or withdraw. See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.\
+December 11th 1:00 to 3:00 pm - Final Exam
 
 \newpage
 
@@ -266,16 +359,17 @@ Both lecture slides and papers will be available via Canvas. Slides will be post
 
 ```{r Schedule, echo=FALSE}
 kable(MeetingDays[,c("Date",
-                     "Week",
                      "Lecture",
-                     "Lab")
+                     "Lab",
+                     "Reading")
                      ],
   caption = "Course Schedule.",
   align = c("l",
-            "c",
             "l",
-            "r")
-)
+            "l",
+            "l")
+)%>%
+  column_spec(2:4, width = "5cm")
 ```
 
 \newpage
@@ -492,7 +586,15 @@ Move away from external windows to the hallway in the basement, first, or second
 
 ```
 
+```{r Title IX, child='general_components/title_ix.md'}
+
+```
+
 ```{r Food Insecurity, child='general_components/food_insecurity.md'}
+
+```
+
+```{r Lowcost Internet, child='general_components/lowcost_internet.md'}
 
 ```
 
