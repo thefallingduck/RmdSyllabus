@@ -4,6 +4,7 @@
 \usepackage[]{mathpazo}
 \usepackage{multicol}
 \usepackage{abstract}
+\usepackage{tabularx, booktabs}
 \renewcommand{\abstractname}{}    % clear the title
 \renewcommand{\absnamepos}{empty} % originally center
 \newcommand{\blankline}{\quad\pagebreak[2]}
@@ -87,7 +88,6 @@
 
 \setcounter{secnumdepth}{0}
 
-\usepackage{longtable}
 
 
 
@@ -112,7 +112,7 @@
   \textbf{Dr.~Benjamin J. Linzmeier}\\
   Email: \href{mailto:blinzmeier@southalabama.edu}{\nolinkurl{blinzmeier@southalabama.edu}}\\
   Preferred contact: Canvas LMS messages\\
-  Office Hours: 10:00 am - 12:00 pm MW \newline 1:00 - 3:00 pm T\\
+  Office Hours: 2:00 - 4:00 pm MTu \newline 9:00 - 11:00 am F\\
   Office: Life Science Building room 344\\
   Correspondence policy: Within 24 hours on weekdays; 48 hours on
 weekends\\
@@ -123,7 +123,7 @@ weekends\\
 \noindent \begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} lr @{\extracolsep{\fill}}}
 \textbf{\underline{Class information}}\\
   Classroom: LCSB 337\\
-  Class Hours: 12:20 - 1:10 pm MW\\
+  Class Hours: 12:20 - 1:10 pm MWF\\
     Lab room: LCSB 337\\
   Lab Hours: 1:25 pm - 3:55 pm W\\
     \\
@@ -136,14 +136,14 @@ weekends\\
 \hypertarget{course-description}{%
 \section{Course description}\label{course-description}}
 
-Why does Sedimentology (GY306{[}W{]}) matter? Sediments house the record
-of climate at Earth's surface, influence climate through feedbacks, and
-house important resources. In this course you will learn how sediments
-are formed, moved, and preserved in the rock record. We will discuss the
-way that paleoenvironments are interpreted from observations of rocks on
-multiple scales. In addition, we will work together to improve your
-writing skills with a focus on a few of the genres of writing you may be
-expected to do as professional geologists.
+Why do Sedimentology and Stratigraphy (GY306{[}W{]}) matter? Sediments
+house the record of climate at Earth's surface, influence climate
+through feedbacks, and house important resources. In this course you
+will learn how sediments are formed, moved, and preserved in the rock
+record. We will discuss the way that paleoenvironments are interpreted
+from observations of rocks on multiple scales. In addition, we will work
+together to improve your writing skills with a focus on a few of the
+genres of writing you may be expected to do as professional geologists.
 
 \hypertarget{writing-requirements}{%
 \section{Writing requirements}\label{writing-requirements}}
@@ -158,12 +158,12 @@ assessment.
 \hypertarget{important-dates}{%
 \section{Important Dates}\label{important-dates}}
 
-August 23rd - Last day to drop without WD\\
-October 10th - Midterm exam\\
-October 28th - Last day to drop or withdraw. See the
+August 29th - Last day to drop without WD\\
+October 11th - Midterm exam\\
+November 3rd - Last day to drop or withdraw. See the
 \href{https://www.southalabama.edu/academiccalendar/}{Academic Calendar}
 for more information.\\
-December 5th 1:00 to 3:00 pm - Final Exam
+December 11th 1:00 to 3:00 pm - Final Exam
 
 \newpage
 
@@ -234,47 +234,102 @@ Canvas.
 
 \newpage
 
-\begin{longtable}[]{@{}lclr@{}}
-\caption{Course Schedule.}\tabularnewline
-\toprule()
-Date & Week & Lecture & Lab \\
-\midrule()
-\endfirsthead
-\toprule()
-Date & Week & Lecture & Lab \\
-\midrule()
-\endhead
-2022-08-17 & 1 & Introduction & NO LAB \\
-2022-08-22 & 2 & Weathering & \\
-2022-08-24 & 2 & Erosion & Clastic Rocks \\
-2022-08-29 & 3 & Petrology & \\
-2022-08-31 & 3 & Carbonate Rocks & Carbonate Rocks \\
-2022-09-07 & 4 & Sedimentary Petrology & Petrology \\
-2022-09-12 & 5 & Science writing & \\
-2022-09-14 & 5 & Fluid Flow Dynamics & Wave flume \\
-2022-09-19 & 6 & Fluid Flow Dynamics & \\
-2022-09-21 & 6 & Gravity Flows & Turbidity \\
-2022-09-26 & 7 & Turbidity current & \\
-2022-09-28 & 7 & Sed. Structures & Sed. Structures \\
-2022-10-03 & 8 & Depositional Environment & \\
-2022-10-05 & 8 & Facies & Figure Making \\
-2022-10-10 & 9 & Midterm review & \\
-2022-10-12 & 9 & Midterm & NO LAB \\
-2022-10-17 & 10 & Rivers, Fans, and Plains & \\
-2022-10-19 & 10 & Rivers, Fans, and Plains & Stream table \\
-2022-10-24 & 11 & Lacustrian Environments & \\
-2022-10-26 & 11 & Eolian Environments & Maps \\
-2022-10-31 & 12 & Glacial Environments & \\
-2022-11-02 & 12 & Deltas 1 & Terrestrial Dep. Env. \\
-2022-11-07 & 13 & Deltas 2 & \\
-2022-11-09 & 13 & Shallow Marine Environment & NO LAB \\
-2022-11-14 & 14 & Marine Environment & \\
-2022-11-16 & 14 & Carbonate Environment & Dep. Env. Summary \\
-2022-11-21 & 15 & Diagenesis & \\
-2022-11-28 & 16 & Climate and Sedimentology & \\
-2022-11-30 & 16 & Proposal Presentations & Presentations \\
-\bottomrule()
-\end{longtable}
+\begin{table}
+
+\caption{\label{tab:Schedule}Course Schedule.}
+\centering
+\begin{tabular}[t]{l|>{\raggedright\arraybackslash}p{5cm}|>{\raggedright\arraybackslash}p{5cm}|>{\raggedright\arraybackslash}p{5cm}}
+\hline
+Date & Lecture & Lab & Reading\\
+\hline
+2023-08-23 & Introduction & Field & \\
+\hline
+2023-08-25 & Project and Writing &  & Part 1\\
+\hline
+2023-08-28 & Weathering &  & N. 6 or B. 1\\
+\hline
+2023-08-30 & Erosion & Sand description & \\
+\hline
+2023-09-01 & Writing behavior &  & Ch. 3\&4\\
+\hline
+2023-09-06 & Rock cycle and clastics & Clastic ID & B. 3 or N. 2 +Digital\\
+\hline
+2023-09-08 & Abstracts &  & Ch. 9\\
+\hline
+2023-09-11 & Fluid Flow Dynamics &  & B. 2 or N. 4\\
+\hline
+2023-09-13 & Fluid Flow Dynamics & Flume & \\
+\hline
+2023-09-15 & Kinds of reading &  & Ch. 28\\
+\hline
+2023-09-18 & Gravity flows &  & B. 2.4 or N 4.2/.3\\
+\hline
+2023-09-20 & Sed. Structures & Dauphin Island & \\
+\hline
+2023-09-22 & Felling your story &  & Ch. 7\\
+\hline
+2023-09-25 & Continental deposits &  & B. 8 or N. 7-10\\
+\hline
+2023-09-27 & Continental deposits & Carbonate ID & \\
+\hline
+2023-09-29 & Parts to a paper &  & Ch. 8\\
+\hline
+2023-10-02 & Marine deposits &  & B. 10-11 or N. 14-16\\
+\hline
+2023-10-04 & Marine deposits & Petrography & \\
+\hline
+2023-10-06 & Revision &  & Ch. 23\\
+\hline
+2023-10-09 & Midterm review &  & \\
+\hline
+2023-10-11 & Midterm & No lab & \\
+\hline
+2023-10-16 & Presentations &  & \\
+\hline
+2023-10-18 & Presentations & Project figure & \\
+\hline
+2023-10-20 & Conferences &  & TBD\\
+\hline
+2023-10-23 & Relative Dating &  & B. 12 or N. 19\\
+\hline
+2023-10-25 & Facies & Stedman's Landing & \\
+\hline
+2023-10-27 & NSF Proposals &  & NSF Proposals\\
+\hline
+2023-10-30 & Radiometric dating &  & B. 15 or N. 21\\
+\hline
+2023-11-01 & Strat columns & Baldwin Ct Outcrop & \\
+\hline
+2023-11-03 & Specious barriers to writing &  & Specious barriers to writing\\
+\hline
+2023-11-06 & Base level and strat &  & Wheeler 1964\\
+\hline
+2023-11-08 & Sed Basins & QGIS Map & B. 16 or N. 24\\
+\hline
+2023-11-10 & Diverse writing &  & Ch. 26\\
+\hline
+2023-11-13 & Sequence Strat &  & B. 13 or N. 23\\
+\hline
+2023-11-15 & Sequence Strat & Correlation & \\
+\hline
+2023-11-17 & Draft discussion &  & \\
+\hline
+2023-11-20 & Correlation &  & B. 12 or N. 19\\
+\hline
+2023-11-27 & Subsurface strat &  & B. 13 or N. 22\\
+\hline
+2023-11-29 & Subsurface strat & Log interpretation & \\
+\hline
+2023-12-01 & Audiences &  & Ch. 24\\
+\hline
+2023-12-04 & Final review &  & \\
+\hline
+2023-12-06 & Project presentations & Presentations & \\
+\hline
+2023-12-08 & Lessons learned &  & Part VII\\
+\hline
+\end{tabular}
+\end{table}
 
 \newpage
 
@@ -309,33 +364,39 @@ discretion.
 
 Assignments will be returned within a week of submission.
 
-\begin{longtable}[]{@{}lr@{}}
-\toprule()
-Grade & Range \\
-\midrule()
-\endhead
-A & 90-100 \\
-B & 80-89 \\
-C & 70-79 \\
-D & 60-69 \\
-F & \textless{} 60 \\
-\bottomrule()
-\end{longtable}
+\begin{tabular}{l|r}
+\hline
+Grade & Range\\
+\hline
+A & 90-100\\
+\hline
+B & 80-89\\
+\hline
+C & 70-79\\
+\hline
+D & 60-69\\
+\hline
+F & < 60\\
+\hline
+\end{tabular}
 
 Assignment weighting will follow:
 
-\begin{longtable}[]{@{}lr@{}}
-\toprule()
-Item & Weight \\
-\midrule()
-\endhead
-Writing scaffolding & 20 \% \\
-Semester Project & 35 \% \\
-Labratory Assignments & 25 \% \\
-Midterm Exam & 10 \% \\
-Final Exam & 10 \% \\
-\bottomrule()
-\end{longtable}
+\begin{tabular}{l|r}
+\hline
+Item & Weight\\
+\hline
+Writing scaffolding & 20 \%\\
+\hline
+Semester Project & 35 \%\\
+\hline
+Labratory Assignments & 25 \%\\
+\hline
+Midterm Exam & 10 \%\\
+\hline
+Final Exam & 10 \%\\
+\hline
+\end{tabular}
 
 \newpage
 
@@ -666,10 +727,6 @@ policies and practices. These policies can be found at
 policies may change during the semester, and students should check the
 University's Coronavirus Update page regularly.
 
-There is also a student incentive program for getting vaccinated.
-Details about insentives can be found at
-\url{https://www.southalabama.edu/coronavirus/vaccineincentive/}
-
 \hypertarget{writing-center}{%
 \subsection{Writing center}\label{writing-center}}
 
@@ -693,6 +750,21 @@ please notify the instructor/professor and provide certification from
 the Office of Special Student Services. OSSS is located at 5828 Old
 Shell Road at Jaguar Drive, (251-460-7212).
 
+\hypertarget{title-ix-sex-discrimination-resources}{%
+\subsection{Title IX -- Sex discrimination
+resources}\label{title-ix-sex-discrimination-resources}}
+
+Discrimination and harassment have no place in our community. The Title
+IX office on campus is the formal location where regulations of sexual
+misconduct are heard and investigated. Misconduct includes dating and
+domestic violence, electronic or in person stalking, retaliation,
+unequal treatment based on sex, and sexual assault or harassment.
+University employees are required to report sexual misconduct to the
+Title IX office that we observe or otherwise learn about. More
+information on the Title IX office can be found
+\href{https://www.southalabama.edu/departments/studentaffairs/titlenine/}{at
+their website}.
+
 \hypertarget{food-insecurity}{%
 \subsection{Food insecurity}\label{food-insecurity}}
 
@@ -700,6 +772,19 @@ If you are subject to food insecurity, JagPantry provides a food for
 students needing assistance. More information can be found
 \href{https://www.southalabama.edu/departments/sga/foodpantry.html}{on
 their website}
+
+\hypertarget{lower-internet-costs}{%
+\subsection{Lower Internet Costs}\label{lower-internet-costs}}
+
+Because of the hybrid delivery mode of the course, reliable internet is
+important to maintain. There are several avenues that can help provide
+free or low-cost home internet some can be found through
+\href{https://adeca.alabama.gov/affordable-connectivity-program/}{the
+Affordable Connectivity Program} run by the State of Alabama. One
+service supported through these programs is
+\href{https://www.truconnect.com/findhelp}{TruConnect}. If you are
+supported by a Pell Grant, are a veteran, or have other qualifying
+statuses, this option can provide free broadband.
 
 \hypertarget{mental-health}{%
 \subsection{Mental health}\label{mental-health}}
