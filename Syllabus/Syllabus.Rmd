@@ -348,7 +348,15 @@ Move away from external windows to the hallway in the basement, first, or second
 
 ```
 
+```{r Title IX, child='general_components/title_ix.md'}
+
+```
+
 ```{r Food Insecurity, child='general_components/food_insecurity.md'}
+
+```
+
+```{r Lowcost Internet, child='general_components/lowcost_internet.md'}
 
 ```
 
