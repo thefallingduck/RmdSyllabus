@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.15)  21 AUG 2023 11:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.15)  21 AUG 2023 12:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -452,13 +452,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--131
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 198.
 
+
+Overfull \hbox (16.35538pt too wide) in paragraph at lines 214--216
+[]\T1/ppl/m/n/10.95 Sam Boggs Jr., \T1/ppl/b/n/10.95 Prin-ci-ples of Sed-i-men-tol-ogy and Stratig-ra-phy\T1/ppl/m/n/10.95 , 5th edi-tion, Pear-son, ISBN: 0321643186 
+ []
+
 [2]
-Overfull \hbox (57.32884pt too wide) in paragraph at lines 241--332
+Overfull \hbox (57.32884pt too wide) in paragraph at lines 246--337
  [][] 
  []
 
 [3] [4] [5] [6] [7]
-Overfull \hbox (21.33542pt too wide) in paragraph at lines 656--658
+Overfull \hbox (21.33542pt too wide) in paragraph at lines 661--663
 []\T1/ppl/m/n/10.95 Violation of aca-demic con-duct pol-icy may re-sult in re-ceiv-ing 0 credit for the af-fected exam/assignment. 
  []
 
@@ -481,7 +486,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  70i,12n,67p,1197b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Syllabus.pdf (11 pages, 94585 bytes).
+Output written on Syllabus.pdf (11 pages, 94929 bytes).
 PDF statistics:
  446 PDF objects out of 1000 (max. 8388607)
  422 compressed objects within 5 object streams
