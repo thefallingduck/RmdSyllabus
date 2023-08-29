@@ -30,10 +30,10 @@ instructor:
 #    office: OfficeNumber
 #    sections: '301'
    
-classroom: 'ELCSB 0119	'
-classhours: 9:30 - 10:45 am	TTh
-#labroom: 'LCSB 337'
-#labhours: 1:25 pm - 3:55 pm	W
+classroom: 'ELCSB 337'
+classhours: 12:20 - 1:10 pm	MWF
+labroom: 'ELCSB 337'
+labhours: 1:25 pm - 3:55 pm	W
 fontfamily: mathpazo
 fontsize: 11pt
 header-includes: \linespread{1.05}
@@ -51,7 +51,7 @@ library(knitr)
 #Semester start and end dates are selected and then university holidays like spring break are specified.
 
 #Days of the week that the course meets. Must be full day name in quotes.
-Days <- c("Monday", "Wednesday")
+Days <- c("Monday", "Wednesday", "Friday")
 #Semester start date for classes as YYYY/M/D.
 SemesterStart <- as.Date("2024/1/9")
 
@@ -115,65 +115,81 @@ MeetingDays$Class <- 1:nrow(MeetingDays)
 #Replace this with c("Lecture topic 1",...,"Lecture topic N") to fill in table.
 
 Lecture_Topic <- c("Introduction and project outline",
+                   "Writing Discussion",
                    "Fossilization",
                    "Sampling the record",
+                   "Writing Discussion",
                    "Phanerozoic diversity",
                    "Phanerozoic diversity",
+                   "Writing Discussion",
                    "Describing species",
                    "Phylogenetics",
+                   "Writing Discussion",
                    "Species concepts",
                    "Describing variability",
+                   "Writing Discussion",
                    "Growth and development",
                    "Allometric growth and ontogeny",
+                   "Writing Discussion",
                    "Evolution and fossils",
                    "Mode and tempo of evolution",
+                   "Writing Discussion",
                    "Midterm Review",
                    "Midterm",
+                   "Writing Discussion",
                    "Functional morphology",
                    "Theoretical morphology",
+                   "Writing Discussion",
                    "Global diversity",
                    "Sampling diversity",
+                   "Writing Discussion",
                    "Mass extinctions",
                    "Recognizing mass extinctions",
+                   "Writing Discussion",
                    "Cambrian explosion",
                    "Causes of the explosion",
+                   "Writing Discussion",
                    "Late Permian Extinction",
                    "Determining causes of PT",
+                   "Writing Discussion",
                    "End Cretaceous extinction",
                    "Causes of the K-Pg",
+                   "Writing Discussion",
                    "Conservation paleobiology",
-                   "Modern extinction?")
+                   "Modern extinction?",
+                   "Writing Discussion")
   #1:nrow(MeetingDays)
 
-Reading_Assignment <- c("Syllabus and Project handout",
-                        "The Nature of the Fossil Record",
-                        "",
-                        "Alroy et al.,...?",
-                        "",
-                        "Systematics",
-                        "",
-                        "Populations and Species",
-                        "",
-                        "Growth and form",
-                        "",
-                        "Evolutionary rates and trends",
-                        "White Earth",
-                        "",
-                        "",
-                        "TBD",
-                        "",
-                        "Green Earth",
-                        "",
-                        "TBD",
-                        "",
-                        "TBD",
-                        "",
-                        "TBD",
-                        "",
-                        "TBD",
-                        "",
-                        "Putting the dead to work",
-                        "TBD")
+Reading_Assignment <- c("TBD")
+# Syllabus and Project handout",
+#                         "The Nature of the Fossil Record",
+#                         "",
+#                         "Alroy et al.,...?",
+#                         "",
+#                         "Systematics",
+#                         "",
+#                         "Populations and Species",
+#                         "",
+#                         "Growth and form",
+#                         "",
+#                         "Evolutionary rates and trends",
+#                         "White Earth",
+#                         "",
+#                         "",
+#                         "TBD",
+#                         "",
+#                         "Green Earth",
+#                         "",
+#                         "TBD",
+#                         "",
+#                         "TBD",
+#                         "",
+#                         "TBD",
+#                         "",
+#                         "TBD",
+#                         "",
+#                         "Putting the dead to work",
+#                         "TBD")
 
 MeetingDays <- bind_cols(MeetingDays, Lecture = Lecture_Topic, Reading = Reading_Assignment)
 
