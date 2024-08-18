@@ -1,6 +1,6 @@
 ---
 title: 'GY306(W): Sedimentology and Stratigraphy'
-date: "Fall 2023"
+date: "Fall 2024"
 output:
   pdf_document:
     keep_tex: yes
@@ -18,7 +18,7 @@ instructor:
   email: blinzmeier@southalabama.edu
   prefered_contact: Canvas LMS messages
   officehours: 10:00 am - 12:00 pm MW \newline 1:00 - 3:00 pm T
-  office: Life Science Building room 344
+  office: Earth and Life Science Building room 344
   correspondence_policy: Within 24 hours on weekdays; 48 hours on weekends
 
 # You can include multiple entries for a teaching assistant by filling in all these options below. Currently this is set to populate two columns on the syllabus but there is not an even column break inserted.
@@ -54,24 +54,24 @@ library(knitr)
 Days <- c("Monday", "Wednesday")
 
 #Semester start date for classes as YYYY/M/D.
-SemesterStart <- as.Date("2022/8/16")
+SemesterStart <- as.Date("2024/8/20")
 
 #Semester end date for classes as YYYY/M/D.
-SemesterEnd <- as.Date("2022/12/2")
+SemesterEnd <- as.Date("2024/12/6")
 
 #Fall break start and stop date.
 FallBreak <-
   seq.Date(
-    from = as.Date("2022/10/6"),
-    to = as.Date("2022/10/9"),
+    from = as.Date("2024/10/10"),
+    to = as.Date("2024/10/13"),
     by = "day"
   )
 
 #Spring break start and stop date.
 SpringBreak <-
   seq.Date(
-    from = as.Date("2022/02/28"),
-    to = as.Date("2022/03/06"),
+    from = as.Date("2025/03/03"),
+    to = as.Date("2025/03/09"),
     by = "day"
   )
 
