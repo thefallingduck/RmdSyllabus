@@ -1,0 +1,3 @@
+## Lower Internet Costs
+
+Because of the hybrid delivery mode of the course, reliable internet is important to maintain. There are several avenues that can help provide free or low-cost home internet some can be found through [the Affordable Connectivity Program](https://adeca.alabama.gov/affordable-connectivity-program/) run by the State of Alabama. One service supported through these programs is [TruConnect](https://www.truconnect.com/findhelp). If you are supported by a Pell Grant, are a veteran, or have other qualifying statuses, this option can provide free broadband.
