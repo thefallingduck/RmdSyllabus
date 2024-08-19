@@ -1,0 +1,3 @@
+## Title IX -- Sex discrimination resources
+
+Discrimination and harassment have no place in our community. The Title IX office on campus is the formal location where regulations of sexual misconduct are heard and investigated. Misconduct includes dating and domestic violence, electronic or in person stalking, retaliation, unequal treatment based on sex, and sexual assault or harassment. University employees are required to report sexual misconduct to the Title IX office that we observe or otherwise learn about. More information on the Title IX office can be found [at their website](https://www.southalabama.edu/departments/studentaffairs/titlenine/). 
