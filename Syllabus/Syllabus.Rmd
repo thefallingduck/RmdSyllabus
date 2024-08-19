@@ -1,6 +1,6 @@
 ---
 title: 'GY112: Earth History'
-date: "Fall 2023"
+date: "Fall 2024"
 output:
   pdf_document:
     keep_tex: yes
@@ -17,7 +17,7 @@ instructor:
 - name: Dr. Benjamin J. Linzmeier
   email: blinzmeier@southalabama.edu
   prefered_contact: Canvas LMS messages
-  officehours: 2:00 - 4:00 pm MTu \newline 9:00 - 11:00 am F
+  officehours: 9:30 - 11:30 am MW \newline 2:00 - 4:00 pm M
   office: Life Science Building room 344
   correspondence_policy: Within 24 hours on weekdays; 48 hours on weekends
 
@@ -54,24 +54,24 @@ library(knitr)
 Days <- c("Tuesday", "Thursday")
 
 #Semester start date for classes as YYYY/M/D.
-SemesterStart <- as.Date("2023/8/22")
+SemesterStart <- as.Date("2024/8/20")
 
 #Semester end date for classes as YYYY/M/D.
-SemesterEnd <- as.Date("2023/12/8")
+SemesterEnd <- as.Date("2024/12/6")
 
 #Fall break start and stop date.
 FallBreak <-
   seq.Date(
-    from = as.Date("2023/10/12"),
-    to = as.Date("2023/10/15"),
+    from = as.Date("2024/10/10"),
+    to = as.Date("2024/10/13"),
     by = "day"
   )
 
 #Spring break start and stop date.
 SpringBreak <-
   seq.Date(
-    from = as.Date("2024/03/4"),
-    to = as.Date("2024/03/10"),
+    from = as.Date("2025/03/03"),
+    to = as.Date("2025/03/09"),
     by = "day"
   )
 
