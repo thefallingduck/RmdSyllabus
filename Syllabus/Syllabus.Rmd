@@ -1,5 +1,5 @@
 ---
-title: 'GY306(W): Sedimentology'
+title: 'GY306(W): Sedimentology and Stratigraphy'
 date: "Fall 2024"
 output:
   pdf_document:
