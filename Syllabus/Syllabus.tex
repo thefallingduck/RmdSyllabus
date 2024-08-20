@@ -4,6 +4,8 @@
 \usepackage[]{mathpazo}
 \usepackage{multicol}
 \usepackage{abstract}
+\usepackage{array}
+\usepackage{ragged2e}  % For ragged formatting
 \renewcommand{\abstractname}{}    % clear the title
 \renewcommand{\absnamepos}{empty} % originally center
 \newcommand{\blankline}{\quad\pagebreak[2]}
@@ -88,7 +90,6 @@
 
 \setcounter{secnumdepth}{0}
 
-\usepackage{longtable}
 
 
 
@@ -114,7 +115,7 @@
   Email: \href{mailto:blinzmeier@southalabama.edu}{\nolinkurl{blinzmeier@southalabama.edu}}\\
   Preferred contact: Canvas LMS messages\\
   Office Hours: 9:30 - 11:30 am MW \newline 2:00 - 4:00 pm M\\
-  Office: Earth and Life Science Building room 344\\
+  Office: Life Science Building room 344\\
   Correspondence policy: Within 24 hours on weekdays; 48 hours on
 weekends\\
     \columnbreak
@@ -124,7 +125,7 @@ weekends\\
 \noindent \begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} lr @{\extracolsep{\fill}}}
 \textbf{\underline{Class information}}\\
   Classroom: LCSB 337\\
-  Class Hours: 12:20 - 1:10 pm MW\\
+  Class Hours: 12:20 - 1:10 pm MWF\\
     Lab room: LCSB 337\\
   Lab Hours: 1:25 pm - 3:55 pm W\\
     \\
@@ -137,38 +138,32 @@ weekends\\
 \hypertarget{course-description}{%
 \section{Course description}\label{course-description}}
 
-Sediments house the record of climate at Earth's surface, influence
-climate through feedbacks, and house important resources. In this course
-you will learn how sediments are formed, moved, and preserved in the
-rock record. We will discuss the way that paleoenvironments are
-interpreted from observations of rocks on multiple scales. We will work
-to tie observations of sedimentary rocks to their interpretation in both
-time and space with a focus on the process of conducting stratigraphic
-research. We will spend time on various correlation and geochronological
-tools as well as stratigraphic interpretation frameworks. In addition,
-we will work together to improve your writing skills with a focus on a
-few of the genres of writing you may be expected to do as professional
-geologists.
+Why do Sedimentology and Stratigraphy (GY306{[}W{]}) matter? Sediments
+house the record of climate at Earth's surface, influence climate
+through feedbacks, and house important resources. In this course you
+will learn how sediments are formed, moved, and preserved in the rock
+record. We will discuss the way that paleoenvironments are interpreted
+from observations of rocks on multiple scales. In addition, we will work
+together to improve your writing skills with a focus on a few of the
+genres of writing you may be expected to do as professional geologists.
 
 \hypertarget{writing-requirements}{%
 \section{Writing requirements}\label{writing-requirements}}
 
 For this class to fulfill the (W) requirements of USA, you will be doing
-a semester-long research project in an area related to sedimentology or
-stratigraphy. To build your skills in discipline-specific writing, we
-will be doing smaller writing assignments throughout the semester. The
-final projects will be peer-reviewed, revised, and then submitted for
-final grading and assessment.
+a semester-long research project in an area related to sedimentology. To
+build your skills in discipline-specific writing, we will be doing
+smaller writing assignments throughout the semester. The final projects
+will be peer-reviewed, revised, and then submitted for final grading and
+assessment.
 
 \hypertarget{important-dates}{%
 \section{Important Dates}\label{important-dates}}
 
-August 23rd - Last day to drop without WD\\
-October 10th - Midterm exam\\
-October 28th - Last day to drop or withdraw. See the
+August 27th - Last day to drop without WD\\
+November 1st - Last day to drop or withdraw. See the
 \href{https://www.southalabama.edu/academiccalendar/}{Academic Calendar}
 for more information.\\
-December 5th 1:00 to 3:00 pm - Final Exam
 
 \newpage
 
@@ -214,6 +209,11 @@ Stratigraphy}\label{for-general-sedimentology-and-stratigraphy}}
 Gary Nichols, \textbf{Sedimentology and Stratigraphy}, 2nd edition,
 Wiley-Blackwell, ISBN: 978-1-405-13592-4
 
+or
+
+Sam Boggs Jr., \textbf{Principles of Sedimentology and Stratigraphy},
+5th edition, Pearson, ISBN: 0321643186
+
 \hypertarget{optional-books}{%
 \subsection{Optional books}\label{optional-books}}
 
@@ -239,47 +239,102 @@ Canvas.
 
 \newpage
 
-\begin{longtable}[]{@{}lclr@{}}
-\caption{Course Schedule.}\tabularnewline
-\toprule()
-Date & Week & Lecture & Lab \\
-\midrule()
-\endfirsthead
-\toprule()
-Date & Week & Lecture & Lab \\
-\midrule()
-\endhead
-2024-08-21 & 1 & Introduction & NO LAB \\
-2024-08-26 & 2 & Weathering & \\
-2024-08-28 & 2 & Erosion & Clastic Rocks \\
-2024-09-04 & 3 & Petrology & \\
-2024-09-09 & 4 & Carbonate Rocks & Carbonate Rocks \\
-2024-09-11 & 4 & Sedimentary Petrology & Petrology \\
-2024-09-16 & 5 & Science writing & \\
-2024-09-18 & 5 & Fluid Flow Dynamics & Wave flume \\
-2024-09-23 & 6 & Fluid Flow Dynamics & \\
-2024-09-25 & 6 & Gravity Flows & Turbidity \\
-2024-09-30 & 7 & Turbidity current & \\
-2024-10-02 & 7 & Sed. Structures & Sed. Structures \\
-2024-10-07 & 8 & Depositional Environment & \\
-2024-10-09 & 8 & Facies & Figure Making \\
-2024-10-14 & 9 & Midterm review & \\
-2024-10-16 & 9 & Midterm & NO LAB \\
-2024-10-21 & 10 & Rivers, Fans, and Plains & \\
-2024-10-23 & 10 & Rivers, Fans, and Plains & Stream table \\
-2024-10-28 & 11 & Lacustrian Environments & \\
-2024-10-30 & 11 & Eolian Environments & Maps \\
-2024-11-04 & 12 & Glacial Environments & \\
-2024-11-06 & 12 & Deltas 1 & Terrestrial Dep. Env. \\
-2024-11-11 & 13 & Deltas 2 & \\
-2024-11-13 & 13 & Shallow Marine Environment & NO LAB \\
-2024-11-18 & 14 & Marine Environment & \\
-2024-11-20 & 14 & Carbonate Environment & Dep. Env. Summary \\
-2024-11-25 & 15 & Diagenesis & \\
-2024-12-02 & 16 & Climate and Sedimentology & \\
-2024-12-04 & 16 & Proposal Presentations & Presentations \\
-\bottomrule()
-\end{longtable}
+\begin{table}
+
+\caption{\label{tab:Schedule}Course Schedule.}
+\centering
+\begin{tabular}[t]{l|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}p{4cm}}
+\hline
+Date & Lecture & Lab & Reading\\
+\hline
+2024-08-21 & Introduction & Field & \\
+\hline
+2024-08-23 & Project and Writing &  & Part 1\\
+\hline
+2024-08-26 & Weathering &  & N.6 or B.1\\
+\hline
+2024-08-28 & Erosion & Sand description & \\
+\hline
+2024-08-30 & Writing behavior &  & Ch.3\&4\\
+\hline
+2024-09-04 & Rock cycle and clastics & Clastic ID & B.3 or N.2+Digital\\
+\hline
+2024-09-06 & Abstracts &  & Ch.9\\
+\hline
+2024-09-09 & Fluid Flow Dynamics &  & B.2 or N.4\\
+\hline
+2024-09-11 & Fluid Flow Dynamics & Flume & \\
+\hline
+2024-09-13 & Kinds of reading &  & Ch.28\\
+\hline
+2024-09-16 & Gravity flows &  & B.2.4 or N4.2/.3\\
+\hline
+2024-09-18 & Sed. Structures & Dauphin Island & \\
+\hline
+2024-09-20 & Tell your story &  & Ch.7\\
+\hline
+2024-09-23 & Continental deposits &  & B.8 or N.7-10\\
+\hline
+2024-09-25 & Continental deposits & Carbonate ID & \\
+\hline
+2024-09-27 & Parts to a paper &  & Ch.8\\
+\hline
+2024-09-30 & Marine deposits &  & B.10-11 or N.14-16\\
+\hline
+2024-10-02 & Marine deposits & Petrography & \\
+\hline
+2024-10-04 & Revision &  & Ch.23\\
+\hline
+2024-10-07 & Midterm review &  & \\
+\hline
+2024-10-09 & Midterm & No lab & \\
+\hline
+2024-10-14 & Presentations &  & \\
+\hline
+2024-10-16 & Presentations & Project figure & \\
+\hline
+2024-10-18 & Conferences &  & TBD\\
+\hline
+2024-10-21 & Relative Dating &  & B.12 or N.19\\
+\hline
+2024-10-23 & Facies & Stedman's Landing & \\
+\hline
+2024-10-25 & NSF Proposals &  & NSF Proposals\\
+\hline
+2024-10-28 & Radiometric dating &  & B.15 or N.21\\
+\hline
+2024-10-30 & Strat columns & Baldwin Outcrop & \\
+\hline
+2024-11-01 & Specious barriers &  & Specious barriers\\
+\hline
+2024-11-04 & Base level and strat &  & Wheeler 1964\\
+\hline
+2024-11-06 & Sed Basins & QGIS Map & B.16 or N.24\\
+\hline
+2024-11-08 & Diverse writing &  & Ch.26\\
+\hline
+2024-11-11 & Sequence Strat &  & B.13 or N.23\\
+\hline
+2024-11-13 & Sequence Strat & Correlation & \\
+\hline
+2024-11-15 & Draft discussion &  & \\
+\hline
+2024-11-18 & Correlation &  & B.12 or N.19\\
+\hline
+2024-11-20 & Subsurface strat &  & B.13 or N.22\\
+\hline
+2024-11-22 & Subsurface strat & Log interpretation & \\
+\hline
+2024-11-25 & Audiences &  & Ch.24\\
+\hline
+2024-12-02 & Final review &  & \\
+\hline
+2024-12-04 & Presentations & Presentations & \\
+\hline
+2024-12-06 & Lessons learned &  & Part VII\\
+\hline
+\end{tabular}
+\end{table}
 
 \newpage
 
@@ -314,33 +369,41 @@ discretion.
 
 Assignments will be returned within a week of submission.
 
-\begin{longtable}[]{@{}lr@{}}
-\toprule()
-Grade & Range \\
-\midrule()
-\endhead
-A & 90-100 \\
-B & 80-89 \\
-C & 70-79 \\
-D & 60-69 \\
-F & \textless{} 60 \\
-\bottomrule()
-\end{longtable}
+\begin{tabular}{l|r}
+\hline
+Grade & Range\\
+\hline
+A & 90-100\\
+\hline
+B & 80-89\\
+\hline
+C & 70-79\\
+\hline
+D & 60-69\\
+\hline
+F & < 60\\
+\hline
+\end{tabular}
 
 Assignment weighting will follow:
 
-\begin{longtable}[]{@{}lr@{}}
-\toprule()
-Item & Weight \\
-\midrule()
-\endhead
-Writing scaffolding & 20 \% \\
-Semester Project & 35 \% \\
-Labratory Assignments & 25 \% \\
-Midterm Exam & 10 \% \\
-Final Exam & 10 \% \\
-\bottomrule()
-\end{longtable}
+\begin{tabular}{l|r}
+\hline
+Item & Weight\\
+\hline
+Writing scaffolding & 10 \%\\
+\hline
+Participation & 10 \%\\
+\hline
+Semester Project & 35 \%\\
+\hline
+Labratory Assignments & 25 \%\\
+\hline
+Midterm Exam & 10 \%\\
+\hline
+Final Exam & 10 \%\\
+\hline
+\end{tabular}
 
 \newpage
 
@@ -698,6 +761,21 @@ please notify the instructor/professor and provide certification from
 the Office of Special Student Services. OSSS is located at 5828 Old
 Shell Road at Jaguar Drive, (251-460-7212).
 
+\hypertarget{title-ix-sex-discrimination-resources}{%
+\subsection{Title IX -- Sex discrimination
+resources}\label{title-ix-sex-discrimination-resources}}
+
+Discrimination and harassment have no place in our community. The Title
+IX office on campus is the formal location where regulations of sexual
+misconduct are heard and investigated. Misconduct includes dating and
+domestic violence, electronic or in person stalking, retaliation,
+unequal treatment based on sex, and sexual assault or harassment.
+University employees are required to report sexual misconduct to the
+Title IX office that we observe or otherwise learn about. More
+information on the Title IX office can be found
+\href{https://www.southalabama.edu/departments/studentaffairs/titlenine/}{at
+their website}.
+
 \hypertarget{food-insecurity}{%
 \subsection{Food insecurity}\label{food-insecurity}}
 
@@ -705,6 +783,19 @@ If you are subject to food insecurity, JagPantry provides a food for
 students needing assistance. More information can be found
 \href{https://www.southalabama.edu/departments/sga/foodpantry.html}{on
 their website}
+
+\hypertarget{lower-internet-costs}{%
+\subsection{Lower Internet Costs}\label{lower-internet-costs}}
+
+Because of the hybrid delivery mode of the course, reliable internet is
+important to maintain. There are several avenues that can help provide
+free or low-cost home internet some can be found through
+\href{https://adeca.alabama.gov/affordable-connectivity-program/}{the
+Affordable Connectivity Program} run by the State of Alabama. One
+service supported through these programs is
+\href{https://www.truconnect.com/findhelp}{TruConnect}. If you are
+supported by a Pell Grant, are a veteran, or have other qualifying
+statuses, this option can provide free broadband.
 
 \hypertarget{mental-health}{%
 \subsection{Mental health}\label{mental-health}}
