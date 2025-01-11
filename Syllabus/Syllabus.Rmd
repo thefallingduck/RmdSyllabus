@@ -1,6 +1,6 @@
 ---
 title: 'GY401W: Paleontology'
-date: "Spring 2024"
+date: "Spring 2025"
 output:
   pdf_document:
     keep_tex: yes
@@ -17,7 +17,7 @@ instructor:
 - name: Dr. Benjamin J. Linzmeier
   email: blinzmeier@southalabama.edu
   prefered_contact: Canvas LMS messages
-  officehours: By appointment or drop-in
+  officehours: 11 AM – 12 PM Mo, W, F \newline 2 PM – 5 PM Mo
   office: Life Science Building room 344
   correspondence_policy: Within 24 hours on weekdays; 48 hours on weekends
 
@@ -53,10 +53,10 @@ library(knitr)
 #Days of the week that the course meets. Must be full day name in quotes.
 Days <- c("Monday", "Wednesday", "Friday")
 #Semester start date for classes as YYYY/M/D.
-SemesterStart <- as.Date("2024/1/8")
+SemesterStart <- as.Date("2025/1/13")
 
 #Semester end date for classes as YYYY/M/D.
-SemesterEnd <- as.Date("2024/4/26")
+SemesterEnd <- as.Date("2025/5/02")
 
 #Fall break start and stop date.
 FallBreak <-
@@ -69,8 +69,8 @@ FallBreak <-
 #Spring break start and stop date.
 SpringBreak <-
   seq.Date(
-    from = as.Date("2024/03/04"),
-    to = as.Date("2024/03/10"),
+    from = as.Date("2025/03/01"),
+    to = as.Date("2025/03/09"),
     by = "day"
   )
 
@@ -237,9 +237,10 @@ How do fossils inform us about the history of life on Earth? In Paleontology (GY
 For this class to fulfill the (W) requirements of USA, you will be doing a semester-long research project in an area related to paleontology. To build your skills in discipline-specific writing, we will be doing smaller writing assignments throughout the semester. The final projects will be peer-reviewed, revised, and then submitted for final grading and assessment.
 
 # Important Dates
-January 15th - Last day to drop without WD\
-April 5th - Last day to drop or withdraw\
-April 29th - Final exam from 1-3 PM
+January 20th - Last day to drop without WD\
+March 12th - Midterm exam\
+April 11th - Last day to drop or withdraw\
+May 5th - Final exam from 1-3 PM
 See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.
 
 \newpage
