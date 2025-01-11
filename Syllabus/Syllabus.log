@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.15)  11 JAN 2025 10:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.15)  11 JAN 2025 11:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -431,19 +431,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--131
 {c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 189.
+(hyperref)                than one, level fixed on input line 190.
 
 [2] [3]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 285.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 286.
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 ) [4]
-Overfull \hbox (2.93954pt too wide) in paragraph at lines 376--378
+Overfull \hbox (2.93954pt too wide) in paragraph at lines 377--379
 \T1/ppl/m/n/10.95 Meeting with me or 2-6 sen-tence de-scrip-tion of the re-search project you plan on do-ing this semester. 
  []
 
 [5] [6]
-Overfull \hbox (21.33542pt too wide) in paragraph at lines 437--439
+Overfull \hbox (21.33542pt too wide) in paragraph at lines 438--440
 []\T1/ppl/m/n/10.95 Violation of aca-demic con-duct pol-icy may re-sult in re-ceiv-ing 0 credit for the af-fected exam/assignment. 
  []
 
@@ -466,7 +466,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  70i,12n,67p,1197b,438s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Syllabus.pdf (12 pages, 85203 bytes).
+Output written on Syllabus.pdf (12 pages, 85231 bytes).
 PDF statistics:
  347 PDF objects out of 1000 (max. 8388607)
  323 compressed objects within 4 object streams
