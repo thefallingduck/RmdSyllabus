@@ -351,6 +351,10 @@ Semester project outline of writing products.
 
 Meeting with me or 2-6 sentence description of the research project you plan on doing this semester.
 
+### Project topic presentation
+
+Short ~12 minute presentation with discussion of research plan in class.
+
 ### Project outline
 
 Short outline of full project highlighting the hypotheses to test, data to collect, and impact of the project. This includes no figures but could include a small table for organizing hypotheses.
