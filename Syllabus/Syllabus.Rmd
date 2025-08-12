@@ -1,27 +1,39 @@
 ---
-title: 'GY306(W): Sedimentology and Stratigraphy'
-date: "Fall 2025"
+title: 'GY112: Earth History'
+date: "Fall 2024"
 output:
   pdf_document:
     keep_tex: yes
     fig_caption: yes
     latex_engine: pdflatex
     template: Syllabus_template.tex
-  word_document: default
   html_document:
     df_print: paged
 geometry: margin=1in
+
+#Fill this in with any number of instructors. It uses a two column layout with a column break after each instructor.
+
 instructor:
 - name: Dr. Benjamin J. Linzmeier
   email: blinzmeier@southalabama.edu
   prefered_contact: Canvas LMS messages
-  officehours: "9:00 - 11:00 am MWF"
+  officehours: 9:00 - 11:00 am MWF
   office: Life Science Building room 344
   correspondence_policy: Within 24 hours on weekdays; 48 hours on weekends
-classroom: LCSB 337
-classhours: "12:20 - 1:10 pm\tMWF"
-labroom: LCSB 337
-labhours: "1:25 pm - 3:55 pm\tW"
+
+# You can include multiple entries for a teaching assistant by filling in all these options below. Currently this is set to populate two columns on the syllabus but there is not an even column break inserted.
+
+# teachingassistant:
+#  - name: Filler
+#    email: filler@fill.com
+#    officehours: W T
+#    office: OfficeNumber
+#    sections: '301'
+   
+classroom: 'LCSB 0119	'
+classhours: 9:30 - 10:45 am	TTh
+#labroom: 'LCSB 337'
+#labhours: 1:25 pm - 3:55 pm	W
 fontfamily: mathpazo
 fontsize: 11pt
 header-includes: \linespread{1.05}
@@ -40,27 +52,27 @@ library(kableExtra)
 #Semester start and end dates are selected and then university holidays like spring break are specified.
 
 #Days of the week that the course meets. Must be full day name in quotes.
-Days <- c("Monday", "Wednesday", "Friday")
+Days <- c("Tuesday", "Thursday")
 
 #Semester start date for classes as YYYY/M/D.
-SemesterStart <- as.Date("2025/8/19")
+SemesterStart <- as.Date("2024/8/20")
 
 #Semester end date for classes as YYYY/M/D.
-SemesterEnd <- as.Date("2025/12/5")
+SemesterEnd <- as.Date("2024/12/6")
 
 #Fall break start and stop date.
 FallBreak <-
   seq.Date(
-    from = as.Date("2025/10/09"),
-    to = as.Date("2025/10/12"),
+    from = as.Date("2024/10/10"),
+    to = as.Date("2024/10/13"),
     by = "day"
   )
 
 #Spring break start and stop date.
 SpringBreak <-
   seq.Date(
-    from = as.Date("2025/03/3"),
-    to = as.Date("2025/03/9"),
+    from = as.Date("2025/03/03"),
+    to = as.Date("2025/03/09"),
     by = "day"
   )
 
@@ -69,11 +81,9 @@ SemesterDays <-
   seq.Date(from = SemesterStart, to = SemesterEnd, by = "day")
 
 #Add day before Thanksgiving.
-DayBeforeThnks<-c(as.Date(holiday(
+DayBeforeThnks<-as.Date(holiday(
     year = getRmetricsOptions("currentYear"),
-    Holiday = c("USThanksgivingDay")))-1, as.Date(holiday(
-    year = getRmetricsOptions("currentYear"),
-    Holiday = c("USThanksgivingDay")))+1)
+    Holiday = c("USThanksgivingDay")))-1
 
 #Full list of holidays that there are no classes including breaks.
 Holidays <-
@@ -107,201 +117,109 @@ MeetingDays$Class <- 1:nrow(MeetingDays)
 #Replace this with c("Lecture topic 1",...,"Lecture topic N") to fill in table.
 
 Lecture_Topic <- c("Introduction",
-                   "Project and Writing",
-                   "Weathering",
-                   "Erosion",
-                   "Writing behavior",
-                   "Rock cycle and clastics",
-                   "Abstracts",
-                   "Fluid Flow Dynamics",
-                   "Fluid Flow Dynamics",
-                   "Kinds of reading",
-                   "Gravity flows",
-                   "Sed. Structures",
-                   "Tell your story",
-                   "Continental deposits",
-                   "Continental deposits",
-                   "Parts to a paper",
-                   "Marine deposits",
-                   "Marine deposits",
-                   "Revision",
-                   "Midterm review",
+                   "Earth History as Science",
+                   "The Universe",
+                   "The Earth, broadly",
+                   "Hadean and Archean",
+                   "Archean Eon",
+                   "Evolution 1",
+                   "Evolution 2",
+                   "Proterozoic Life 1",
+                   "Proterozoic Life 2",
+                   "Proterozoic Geology 1",
+                   "Proterozoic Geology 2",
+                   "Paleozoic Geology 1",
+                   "Paleozoic Geology 2",
                    "Midterm",
-                   "Relative Dating",
-                   "Facies",
-                   "NSF Proposals",
-                   "Presentations",
-                   "Presentations",
-                   "Conferences",
-                   "Radiometric dating",
-                   "Strat columns",
-                   "Specious barriers",
-                   "Base level and strat",
-                   "Sed Basins",
-                   "Diverse writing",
-                   "Sequence Strat",
-                   "Sequence Strat",
-                   "Draft discussion",
-                   "Correlation",
-                   "Subsurface strat",
-                   "Subsurface strat",
-                   "Audiences",
-                   "Final review",
-                   "Presentations",
-                   "Lessons learned"
-                   )
+                   "Common cause",
+                   "",
+                   "Contingency",
+                   "Paleozoic Life 1",
+                   "Paleozoic Life 2",
+                   "Mesozoic Geology 1",
+                   "Mesozoic Geology 2",
+                   "Mesozoic Life 1",
+                   "Mesozoic Life 2",
+                   "Cenozoic Geology 1",
+                   "Cenozoic Geology 2",
+                   "Models in Earth History",
+                   "Cenozoic Life 1",
+                   "Cenozoic Life 2",
+                   "Climate and the future 1",
+                   "Climate and the future 2")
   #1:nrow(MeetingDays)
 
-Week_Reading <- c("",
-                   "Part 1",
-                   "N.6 or B.1",
-                   "",
-                   "Ch.3&4",
-                   "B.3 or N.2+Digital",
-                   "Ch.9",
-                   "B.2 or N.4",
-                   "",
-                   "Ch.28",
-                   "B.2.4 or N4.2/.3",
-                   "",
-                   "Ch.7",
-                   "B.8 or N.7-10",
-                   "",
-                   "Ch.8",
-                   "B.10-11 or N.14-16",
-                   "",
-                   "Ch.23",
-                   "",
-                   "",                                    "B.12 or N.19",
-                   "",
-                   "NSF Proposals",
-                   "",
-                   "",
-                   "TBD",
-                   "B.15 or N.21",
-                   "",
-                   "Specious barriers",
-                   "Wheeler 1964",
-                   "B.16 or N.24",
-                   "Ch.26",
-                   "B.13 or N.23",
-                   "",
-                   "",
-                   "B.12 or N.19",
-                   "B.13 or N.22",
-                   "",
-                   "Ch.24",
-                   "",
-                   "",
-                   "Part VII"
-                   )
+Reading_Assignment <- c("Prologue",
+                        "",
+                        "Chemical Earth",
+                        "",
+                        "Physical Earth",
+                        "",
+                        "Paper - Canvas",
+                        "",
+                        "Biological Earth",
+                        "",
+                        "Oxygen Earth",
+                        "",
+                        "",
+                        "Paper - Canvas",
+                        "",
+                        "",
+                        "Paper - Canvas",
+                        "Paper - Canvas",
+                        "Animal Earth",
+                        "Green Earth",
+                        "Paper - Canvas",
+                        "",
+                        "Catastrophic Earth",
+                        "",
+                        "Paper - Canvas",
+                        "",
+                        "Paper - Canvas",
+                        "Paper - Canvas",
+                        "",
+                        "Human Earth",
+                        "")
 
-Lab_Meeting <- c("Field",
-                   "",
-                   "",
-                   "Sand description",
-                   "",
-                   "Clastic ID",
-                   "",
-                   "",
-                   "Flume",
-                   "",
-                   "",
-                   "Dauphin Island",
-                   "",
-                   "",
-                   "Carbonate ID",
-                   "",
-                   "",
-                   "Petrography",
-                   "",
-                   "",
-                   "No lab",
-                   "",
-                   "Stedman's Landing",
-                   "",
-                   "",
-                   "Project figure",
-                   "",
-                   "",
-                   "Baldwin Outcrop",
-                   "",
-                   "",
-                   "QGIS Map",
-                   "",
-                   "",
-                   "Correlation",
-                   "",
-                   "",
-                   "",
-                   "Log interpretation",
-                   "",
-                   "",
-                   "Presentations",
-                   ""
-                   )
-                 #  "NO LAB",
-                 # "",
-                 # "Clastic Rocks",
-                 # "",
-                 # "Carbonate Rocks",
-                 # "Petrology",
-                 # "",
-                 # "Wave flume",
-                 # "",
-                 # "Turbidity",
-                 # "",
-                 # "Sed. Structures",
-                 # "",
-                 # "Figure Making",
-                 # "",
-                 # "NO LAB",
-                 # "",
-                 # "Stream table",
-                 # "",
-                 # "Maps",
-                 # "",
-                 # "Terrestrial Dep. Env.",
-                 # "",
-                 # "NO LAB",
-                 # "",
-                 # "Dep. Env. Summary",
-                 # "",
-                 # "",
-                 # "Presentations")
-
-MeetingDays <- bind_cols(Date = MeetingDays$Date, Lecture = Lecture_Topic, Lab = Lab_Meeting, Reading = Week_Reading)
+MeetingDays <- bind_cols(MeetingDays, Lecture = Lecture_Topic, Reading = Reading_Assignment)
 
 #### Grade table ####
 Grades <- tribble( ~ Grade,
                    ~ Range,
                    "A",
-                   "90-100",
+                   "90-100 %",
                    "B",
-                   "80-89",
+                   "80-89 %",
                    "C",
-                   "70-79",
+                   "70-79 %",
                    "D",
-                   "60-69",
+                   "60-69 %",
                    "F",
-                   "< 60")
+                   "< 60 %")
 
 ####Assignment weight table####
 Weights <- tribble(
                     ~ Item,
                     ~ Weight,
-                    "Writing scaffolding",
-                    "10 %",
-                    "Participation",
-                    "10 %",
-                    "Semester Project",
-                    "35 %",
-                    "Labratory Assignments",
+                    ~ Graded,
+                    "Discussion posts",
                     "25 %",
+                    "Effort",
+                    "Gots and nots",
+                    "10 %",
+                    "Completion",
+                    "Tophat questions",
+                    "15 %",
+                    "Completion (80%)/Correct (20%)",
+                    "Weekly Quizzes",
+                    "25 %",
+                    "Correct",
                     "Midterm Exam",
                     "10 %",
+                    "Correct",
                     "Final Exam",
-                    "10 %"
+                    "15 %",
+                    "Correct"
                   )
 
 
@@ -309,81 +227,73 @@ Weights <- tribble(
 
 # Course description
 
-Why do Sedimentology and Stratigraphy (GY306[W]) matter? Sediments house the record of climate at Earth's surface, influence climate through feedbacks, and house important resources. In this course you will learn how sediments are formed, moved, and preserved in the rock record. We will discuss the way that paleoenvironments are interpreted from observations of rocks on multiple scales. In addition, we will work together to improve your writing skills with a focus on a few of the genres of writing you may be expected to do as professional geologists.
-
-# Writing requirements
-
-For this class to fulfill the (W) requirements of USA, you will be doing a semester-long research project in an area related to sedimentology. To build your skills in discipline-specific writing, we will be doing smaller writing assignments throughout the semester. The final projects will be peer-reviewed, revised, and then submitted for final grading and assessment.
+What can studying the history of Earth tell us about the future and the present? In this course we will walk though major events in the history of our planet and dive into the processes and peculiarities that caused them. We will connect these events to places that matter to us and learn about how their occurrence shapes life today. By the end of the semester you will have a broad understanding of the science of Geology and its application to studying how the Earth works.
 
 # Important Dates
-August 26th - Last day to drop without WD\
-October 31st - Last day to drop or withdraw. See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.\
-
-\newpage
+August 29th - Last day to drop without WD\
+October 10th - Midterm\
+November 3rd - Last day to drop or withdraw.
+See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.\
+December 14th - Final 10:30 am - 12:30 pm\
 
 # Course goals
 
-1.  Observe, describe, classify, and communicate about sediments and sedimentary rocks.
+1.    Explain and apply the scientific method as it is practiced in the Geosciences.
+2.    Link observations of the Earth on multiple scales to the development of theories.
+3.    Identify common invertebrate fossils.
+4.    Describe a broad history of the Earth.
+5.    Link Geological History to current landscapes, biology, and climate.
 
-2.  Develop a framework for building hypotheses about the distributions of sediments, sedimentary structures, and sedimentary environments.
 
-3.  Communicate sedimentary geology to audiences using different genres of writing.
+# Class textbook
 
-4.  Read and summarize scientific papers focused on sedimentary geology and related fields.
+We will be reading a book written for a general audience this semester. It has fewer figures than a textbook, but a better narrative. It is also less expensive.
 
-# Class textbooks
-
-We will have two books that you should have access to for the class this semester. The book on writing below will be referenced and discussed often. We will also refer to the general sedimentology and stratigraphy book.
-
-### For writing
-
-Heard, Stephen B., __The Scientist’s Guide to Writing, 2nd Edition: How to Write More Easily and Effectively throughout Your Scientific Career.__ 2nd edition. Princeton: Princeton University Press, 2022.
-
-### For general Sedimentology and Stratigraphy
-Gary Nichols, __Sedimentology and Stratigraphy__, 2nd edition, Wiley-Blackwell, ISBN: 978-1-405-13592-4
-
-or
-
-Sam Boggs Jr., __Principles of Sedimentology and Stratigraphy__, 5th edition, Pearson, ISBN: 0321643186
-
-## Optional books
-
-### Field focused rock ID
-Dorrik A.V. Stow, __Sedimentary Rocks in the Field: A Colour Guide__, Manson Publishing Ltd, ISBN 10: 1874545693
-
-### Improve the mechanics of your writing
-William Strunk JR. and E.B. White, __The Elements of Style__, ISBN: 1594200696
+Knoll, Andrew H. __A Brief History of Earth.__ Mariner Books, 2023.
 
 ### Lectures and papers
-Both lecture slides and papers will be available via Canvas. Slides will be posted after lectures and assigned papers will be available in Canvas.
+Both lecture slides and supplemental readings will be available via Canvas. Slides will generally be posted shortly before lecture.
 
+# Tophat
+
+We will be using Tophat to facilitate active learning during class. It is relatively inexpensive and can be used in other classes as well. If you encounter a hardship in activating it, please let me know as soon as possible.
+
+# Canvas
+
+We will be using Canvas for quizzes, discussions, and your gots-and-nots. These will be organized into weekly modules. New discussion posts will be available on Saturday and quizzes for the previous week will be due on Saturday. Quizzes will be accessible Thursday afternoon.
 
 \newpage
 
 ```{r Schedule, echo=FALSE}
-kable(MeetingDays[,c("Date", "Lecture", "Lab", "Reading")],
+kable(MeetingDays[,c("Date",
+                     "Class",
+                     "Lecture",
+                     "Reading")
+                     ],
       format = "latex",
       align = c("l", "l", "l", "l"),
       linesep = "",
       booktabs = TRUE) %>%
-  column_spec(2:4, width = "4cm") %>%
-  kable_styling(latex_options = c("hold_position"))
+  column_spec(2:4, width = "4cm") #%>%
+  #kable_styling(latex_options = c("hold_position"))
 ```
-
 \newpage
 
 # Student conduct
 
 ## Attendance policy
 
-Students who complete less than 50% of assignments/exams will be assigned a failing (F) grade.
+Students who complete less than 50% of assignments/exams will be assigned a failing (F) grade. Review the 'Attendance and Absences Policy', in the Undergraduate and Graduate Bulletin for attendance and absences policy.
 
-Review the 'Attendance and Absences Policy', in the Undergraduate and Graduate Bulletin for attendance and absences policy
+Lectures can be attened in person or via Zoom. Recordings will be made available by request.
 
 ## Grading
 
 ### Late policy
-I will be grading assignments in batches to provide fair assessment to everyone. This means late work can be disruptive. The penalty for late work will be 20% a day after the first 24 hours late. If you have a reasonable excuse (illness, etc.) the late policy may be relaxed.
+I will be grading assignments in batches to provide fair assessment to everyone. This means late work can be disruptive. The penalty for late work will be 20% a day after the first 24 hours late. If you have a reason (illness, etc.) the late policy will be relaxed.
+
+### Dropped grades
+Two weeks worth of your lowest scores will be dropped at the end of the semester. This means that the lowest two quiz scores, discussion posts, and Tophat questions will be removed when calculating your final grade.
 
 ### Extra credit
 Extra credit may be made available throughout the semester at my discretion.
@@ -401,142 +311,6 @@ kable(Weights,
       align = c("l", "r"))
 ```
 
-\newpage
-# Writing tasks
-## Scaffolding tasks
-Scaffolding writing tasks assigned to give you some practice and general feedback to improve your writing.
-
-### Abstract 1
-
-First attempt at writing an abstract using the Nature paragraph template.
-
-### Figure Caption
-
-Write the figure captions for several example figures using some literature examples. Learn to describe figures in text.
-
-### Abstract 2
-
-Write the abstract for a second paper using the feedback from the first abstract to improve your process.
-
-### Peer Review
-
-Peer review of preprint or publication using example template. The goal of this assignment is to focus on critiquing the logic put forward in the paper with suggestions for refining it.
-
-
-## Semester project
-
-Semester project outline of writing products.
-
-### Project Story Summary
-
-Short outline of proposed project that answers the following questions. (Based on S.B. Heard's book).\
-1) What is the central question?\
-2) Why is this question important?\
-3) What data (variables) are needed to answer this question?\
-4) What methods are used to get those data?\
-5) What analysis must be applied for the data to answer this question?\
-6) What results are likely?\
-7) How can results answer the question?\
-8) What does the answer tell us about the broader field?
-
-### Proposal introduction draft
-
-Carefully explain the knowledge that lead you to develop this hypothesis and clearly outline the hypothesis
-to be tested. Consider these questions:
-- What do we know about the question you are interested in studying?\
-- What background knowledge do people need to assess if your hypothesis can be tested?\
-- How could auxiliary hypotheses be tested?\
-- What specific data are needed to test the hypothesis and is there a clear distinction between the hypothesis and alternatives?
-
-### Proposal methods draft
-
-This section outlines the required samples, locations, and data that must be collected to test your hypothesis.
-Consider these questions:\
-- Where will samples or field observations come from?\
-- Will data be collected in the field or in a lab?\
-- What instruments are needed to perform the measurements?\
-- What difficulties may come from the interpretations of the measurements?\
-- How many analyses are needed?
-
-### Proposal intellectual merit draft
-
-Create a section that specifically states how this proposal contributes to the field of research and is potentially
-transformative (although this is not as important for the assignment.) Consider the following questions:\
-- What will the potential next steps be beyond testing this hypothesis?\
-- How could the findings of this work have impacts on other areas of research?
-
-### Proposal broader impacts draft
-
-This section summarizes how your work will benefit society. This could be through applications of your
-discovery, training of individuals, or communication to people outside of the scientific community.\
-- Does the research have an economic or societal benefit?\
-- Does the work require the training of individuals?\
-- How would this work benefit the university or community?
-
-### Project first draft
-
-Full proposal draft with figures. The important aspect of this submission is assessment of the research plan and justification.
-
-### Project peer review
-
-Review of a peer's proposal with the goal of improving the work by increasing clarity, readability and communication.
-
-### Project final draft
-
-Full, final project proposal with figures, time line and clear plan for work. Focus is on clearly communicating to your peers that the work is worth doing and that you can do it.
-
-### Project presentation
-
-Presentation of a peer's research proposal with a focus on justifying funding their project. The goal is to convince the audience that the project can be done and will have an important impact on society.
-
-# On writing
-
-## Revising written work
-
-Nothing is perfect on the first draft. We all revise and rework our written creations for a variety of reasons. We may not communicate the point we want to get across to all readers. We may have forgotten or not known important pieces of information initially. The tone of the writing may be inappropriate for the audience. Word choice might obscure meaning. The only way we can make our writing better is by revising it based on constructive feedback from others or ourselves.
-
-## Genres of Science writing
-
-### Paper reviews
-
-Critical but constructive critique of unpublished research papers. Informs the journal editor of how the work contributes to existing literature and provides guide to authors and the editor for improvement to the manuscript. Can be signed but often anonymous.
-
-### Descriptive Reports
-
-Descriptive reports are often made for industry or geological surveys. These describe the composition and structure of rocks in an area. Sometimes they include estimations of resource potentials or environmental impacts of industry.
-
-### Research papers
-
-These pieces of science writing typically test one or more closely related hypotheses in the context of existing scientific knowledge. Most have structure that is pre-defined including: abstract, introduction, methods, results, discussion, and conclusion. Figures are an integral part of most papers in the Geosciences and range from images of outcrops to abstracted summaries of observations to plots of measurements.
-
-### Conference abstracts
-
-These are generally a step on the path to a full research publication where results, interpretations, and context are publicly presented for the first time.
-
-### Grant Applications
-
-Scientific work is generally funded with public or private funds that are obtained by writing grants. Unlike research papers, grants must persuade reviewers that the research planned is important, can be done by the applicant, and can be achieved in the time frame of the funding request.
-
-### Science Communication
-
-Scientists also write general summaries of their work for non-specialist audiences. These can be blog posts, or lesson plans that are shared for educators. Some folks also write books for general audiences describing the processes of science.
-
-## Common processes
-
-For writing in the discipline, we focus on several specific questions to guide our composition:
-1) Who is our audience?
-2) What is the one or two sentence take-home point?
-3) How quickly are we communicating the information?
-
-Science writing, like all writing, is socially situated and caries with it the beliefs, values, and ideologies of the particular community and culture.
-
-## Tips and tricks for good writing
-Use a citation management software to organize your papers and create bibiliographies. My preference is [Zotero](https://www.zotero.org/) because it is free, open source, and works across multiple operating systems.
-
-Write and then revise. Ask for feedback from peers or wait until you have some distance from your writing and then revise.
-
-Prompt yourself with questions that have short, concrete answers.
-
 <!-- The sections of code below that include "child=..." are drawing from seperate .md documents. These allow for updating text in a single spot for use in multiple syllabus documents. -->
 ```{r Academic disruption, child='general_components/academic_disruption.md'}
 
@@ -551,14 +325,6 @@ Student input for the purpose of course improvement is taken very seriously and 
 
 # Safety
 
-## Field Safety
-
-### Transportation
-Wear your seatbelts at all times while in moving vehicles. Do not distract the driver.
-
-### Location awareness
-Be aware of potential dangers (animals, weather, etc) and avoid them. When in a group, please think about the safety of your peers.
-
 ## Building Safety
 
 ### Fire
@@ -569,6 +335,7 @@ Move away from external windows to the hallway in the basement, first, or second
 
 ### Active Shooter Incident
 "Get Out" of the building as long as they can do so safely. Once you have exited the building and are at a safe location, "Call Out" to law enforcement using 911, USA Police at 460-6312, or press the Emergency button on your LiveSafe Mobile Safety App. If you can't get out, "Shelter in Place" in a secure location that is away from windows and doors, preferably a location that can be locked and barricaded.
+
 
 # Campus resources
 
