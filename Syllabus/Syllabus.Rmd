@@ -1,6 +1,6 @@
 ---
 title: 'GY112: Earth History'
-date: "Fall 2024"
+date: "Fall 2025"
 output:
   pdf_document:
     keep_tex: yes
@@ -55,16 +55,16 @@ library(kableExtra)
 Days <- c("Tuesday", "Thursday")
 
 #Semester start date for classes as YYYY/M/D.
-SemesterStart <- as.Date("2024/8/20")
+SemesterStart <- as.Date("2025/8/19")
 
 #Semester end date for classes as YYYY/M/D.
-SemesterEnd <- as.Date("2024/12/6")
+SemesterEnd <- as.Date("2025/12/5")
 
 #Fall break start and stop date.
 FallBreak <-
   seq.Date(
-    from = as.Date("2024/10/10"),
-    to = as.Date("2024/10/13"),
+    from = as.Date("2025/10/09"),
+    to = as.Date("2025/10/12"),
     by = "day"
   )
 
@@ -106,7 +106,7 @@ ClassDays$Weekday <- weekdays(ClassDays$Date)
 
 #Limit to the class meeting days.
 MeetingDays <- ClassDays[ClassDays$Weekday %in% Days, ]
-
+print(MeetingDays)
 #Create numeric list of weeks.
 Week <- cut.Date(MeetingDays$Date, breaks = "week")
 levels(Week) <- 1:length(levels(Week))
@@ -131,11 +131,10 @@ Lecture_Topic <- c("Introduction",
                    "Paleozoic Geology 1",
                    "Paleozoic Geology 2",
                    "Midterm",
-                   "Common cause",
-                   "",
-                   "Contingency",
                    "Paleozoic Life 1",
                    "Paleozoic Life 2",
+                   "Common cause",
+                   "Convergence",
                    "Mesozoic Geology 1",
                    "Mesozoic Geology 2",
                    "Mesozoic Life 1",
@@ -164,15 +163,14 @@ Reading_Assignment <- c("Prologue",
                         "",
                         "Paper - Canvas",
                         "",
-                        "",
-                        "Paper - Canvas",
-                        "Paper - Canvas",
                         "Animal Earth",
                         "Green Earth",
                         "Paper - Canvas",
+                        "Paper - Canvas",
+                        "Paper - Canvas",
+                        "",
                         "",
                         "Catastrophic Earth",
-                        "",
                         "Paper - Canvas",
                         "",
                         "Paper - Canvas",
@@ -180,6 +178,8 @@ Reading_Assignment <- c("Prologue",
                         "",
                         "Human Earth",
                         "")
+
+
 
 MeetingDays <- bind_cols(MeetingDays, Lecture = Lecture_Topic, Reading = Reading_Assignment)
 
@@ -230,11 +230,9 @@ Weights <- tribble(
 What can studying the history of Earth tell us about the future and the present? In this course we will walk though major events in the history of our planet and dive into the processes and peculiarities that caused them. We will connect these events to places that matter to us and learn about how their occurrence shapes life today. By the end of the semester you will have a broad understanding of the science of Geology and its application to studying how the Earth works.
 
 # Important Dates
-August 29th - Last day to drop without WD\
-October 10th - Midterm\
-November 3rd - Last day to drop or withdraw.
+August 26th - Last day to drop without WD\
+October 31st - Last day to drop or withdraw.
 See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.\
-December 14th - Final 10:30 am - 12:30 pm\
 
 # Course goals
 
@@ -262,6 +260,10 @@ We will be using Tophat to facilitate active learning during class. It is relati
 
 We will be using Canvas for quizzes, discussions, and your gots-and-nots. These will be organized into weekly modules. New discussion posts will be available on Saturday and quizzes for the previous week will be due on Saturday. Quizzes will be accessible Thursday afternoon.
 
+# AI Statement
+
+We will discuss in more depth in class. The fundamental AI policy (Large Language Models like ChatGPT and other generative AI tools) is you are responsible for your work. If you use it, and you submit an incorrect, incomplete, or poor answer, you are responsible for what you submit. I deally you only use AI tools to help you better understand the material in conjunction with completing coursework, visiting office hours, and group study.
+
 \newpage
 
 ```{r Schedule, echo=FALSE}
@@ -274,7 +276,7 @@ kable(MeetingDays[,c("Date",
       align = c("l", "l", "l", "l"),
       linesep = "",
       booktabs = TRUE) %>%
-  column_spec(2:4, width = "4cm") #%>%
+  column_spec(3:4, width = "5cm") #%>%
   #kable_styling(latex_options = c("hold_position"))
 ```
 \newpage
