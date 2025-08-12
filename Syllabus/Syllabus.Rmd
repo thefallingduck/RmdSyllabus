@@ -1,6 +1,6 @@
 ---
 title: 'GY112: Earth History'
-date: "Fall 2022"
+date: "Fall 2025"
 output:
   pdf_document:
     keep_tex: yes
@@ -17,7 +17,7 @@ instructor:
 - name: Dr. Benjamin J. Linzmeier
   email: blinzmeier@southalabama.edu
   prefered_contact: Canvas LMS messages
-  officehours: 10:00 am - 12:00 pm MW \newline 1:00 - 3:00 pm T
+  officehours: 9:00 - 111:00 am MWF
   office: Life Science Building room 344
   correspondence_policy: Within 24 hours on weekdays; 48 hours on weekends
 
@@ -30,7 +30,7 @@ instructor:
 #    office: OfficeNumber
 #    sections: '301'
    
-classroom: 'LCSB 0119	'
+classroom: 'LCSB 0119'
 classhours: 9:30 - 10:45 am	TTh
 #labroom: 'LCSB 337'
 #labhours: 1:25 pm - 3:55 pm	W
@@ -45,6 +45,7 @@ library(timeDate)
 library(tibble)
 library(dplyr)
 library(knitr)
+library(kableExtra)
 
 #This code chunk sets up a table of meeting days for the course.
 #You can set days of the week for course meetings (e.g. Monday and Wednesday).
@@ -54,24 +55,24 @@ library(knitr)
 Days <- c("Tuesday", "Thursday")
 
 #Semester start date for classes as YYYY/M/D.
-SemesterStart <- as.Date("2022/8/16")
+SemesterStart <- as.Date("2025/8/19")
 
 #Semester end date for classes as YYYY/M/D.
-SemesterEnd <- as.Date("2022/12/2")
+SemesterEnd <- as.Date("2025/12/5")
 
 #Fall break start and stop date.
 FallBreak <-
   seq.Date(
-    from = as.Date("2022/10/6"),
-    to = as.Date("2022/10/9"),
+    from = as.Date("2025/10/09"),
+    to = as.Date("2025/10/12"),
     by = "day"
   )
 
 #Spring break start and stop date.
 SpringBreak <-
   seq.Date(
-    from = as.Date("2022/02/28"),
-    to = as.Date("2022/03/06"),
+    from = as.Date("2025/03/3"),
+    to = as.Date("2025/03/9"),
     by = "day"
   )
 
@@ -80,9 +81,11 @@ SemesterDays <-
   seq.Date(from = SemesterStart, to = SemesterEnd, by = "day")
 
 #Add day before Thanksgiving.
-DayBeforeThnks<-as.Date(holiday(
+DayBeforeThnks<-c(as.Date(holiday(
     year = getRmetricsOptions("currentYear"),
-    Holiday = c("USThanksgivingDay")))-1
+    Holiday = c("USThanksgivingDay")))-1, as.Date(holiday(
+    year = getRmetricsOptions("currentYear"),
+    Holiday = c("USThanksgivingDay")))+1)
 
 #Full list of holidays that there are no classes including breaks.
 Holidays <-
@@ -267,12 +270,12 @@ kable(MeetingDays[,c("Date",
                      "Lecture",
                      "Reading")
                      ],
-  caption = "Course Schedule.",
-  align = c("l",
-            "c",
-            "c",
-            "r")
-)
+      format = "latex",
+      align = c("l", "l", "l", "l"),
+      linesep = "",
+      booktabs = TRUE) %>%
+  column_spec(2:4, width = "4cm") %>%
+  kable_styling(latex_options = c("hold_position"))
 ```
 \newpage
 
