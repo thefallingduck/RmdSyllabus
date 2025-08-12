@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.15)  19 AUG 2024 16:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.15)  12 AUG 2025 09:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -365,24 +365,24 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 ) (./Syllabus.aux)
 \openout1 = `Syllabus.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -418,28 +418,28 @@ LaTeX Font Info:    ... okay on input line 103.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \big@size=\dimen183
-Package hyperref Info: Link coloring ON on input line 103.
+Package hyperref Info: Link coloring ON on input line 104.
 (./Syllabus.out) (./Syllabus.out)
 \@outlinefile=\write3
 \openout3 = `Syllabus.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 106.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 107.
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 106.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 107.
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 106.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 107.
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 106.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 107.
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 106.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 107.
 (c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
@@ -447,12 +447,12 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 LaTeX Warning: No \author given.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--133
+Underfull \hbox (badness 10000) in paragraph at lines 126--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--167
+Underfull \hbox (badness 10000) in paragraph at lines 161--165
 
  []
 
@@ -461,15 +461,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--167
 {c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 198.
+(hyperref)                than one, level fixed on input line 193.
 
 
-Overfull \hbox (16.35538pt too wide) in paragraph at lines 214--216
+Overfull \hbox (16.35538pt too wide) in paragraph at lines 208--210
 []\T1/ppl/m/n/10.95 Sam Boggs Jr., \T1/ppl/b/n/10.95 Prin-ci-ples of Sed-i-men-tol-ogy and Stratig-ra-phy\T1/ppl/m/n/10.95 , 5th edi-tion, Pear-son, ISBN: 0321643186 
  []
 
 [2] [3] [4] [5] [6] [7]
-Overfull \hbox (21.33542pt too wide) in paragraph at lines 663--665
+Overfull \hbox (21.33542pt too wide) in paragraph at lines 570--572
 []\T1/ppl/m/n/10.95 Violation of aca-demic con-duct pol-icy may re-sult in re-ceiv-ing 0 credit for the af-fected exam/assignment. 
  []
 
@@ -484,18 +484,18 @@ Package rerunfilecheck Info: File `Syllabus.out' has not changed.
 (rerunfilecheck)             Checksum: 37DEB3FCFAE95D442CDC769703728EFF;9808.
  ) 
 Here is how much of TeX's memory you used:
- 10364 strings out of 477148
- 164566 string characters out of 5811047
- 1949248 words of memory out of 5000000
- 31110 multiletter control sequences out of 15000+600000
+ 10303 strings out of 477148
+ 163486 string characters out of 5811047
+ 1947248 words of memory out of 5000000
+ 31112 multiletter control sequences out of 15000+600000
  584570 words of font info for 86 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 70i,12n,67p,1197b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,12n,67p,1197b,438s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/Users/bjlin/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Syllabus.pdf (11 pages, 95292 bytes).
+Output written on Syllabus.pdf (11 pages, 91538 bytes).
 PDF statistics:
- 447 PDF objects out of 1000 (max. 8388607)
- 423 compressed objects within 5 object streams
- 145 named destinations out of 1000 (max. 500000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 347 compressed objects within 4 object streams
+ 82 named destinations out of 1000 (max. 500000)
  513 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,6 @@
 ---
 title: 'GY306(W): Sedimentology and Stratigraphy'
-date: "Fall 2024"
+date: "Fall 2025"
 output:
   pdf_document:
     keep_tex: yes
@@ -15,7 +15,7 @@ instructor:
 - name: Dr. Benjamin J. Linzmeier
   email: blinzmeier@southalabama.edu
   prefered_contact: Canvas LMS messages
-  officehours: "9:30 - 11:30 am MW \\newline 2:00 - 4:00 pm M"
+  officehours: "9:00 - 11:00 am MWF"
   office: Life Science Building room 344
   correspondence_policy: Within 24 hours on weekdays; 48 hours on weekends
 classroom: LCSB 337
@@ -43,16 +43,16 @@ library(kableExtra)
 Days <- c("Monday", "Wednesday", "Friday")
 
 #Semester start date for classes as YYYY/M/D.
-SemesterStart <- as.Date("2024/8/20")
+SemesterStart <- as.Date("2025/8/19")
 
 #Semester end date for classes as YYYY/M/D.
-SemesterEnd <- as.Date("2024/12/6")
+SemesterEnd <- as.Date("2025/12/5")
 
 #Fall break start and stop date.
 FallBreak <-
   seq.Date(
-    from = as.Date("2024/10/10"),
-    to = as.Date("2024/10/13"),
+    from = as.Date("2025/10/09"),
+    to = as.Date("2025/10/12"),
     by = "day"
   )
 
@@ -127,12 +127,12 @@ Lecture_Topic <- c("Introduction",
                    "Revision",
                    "Midterm review",
                    "Midterm",
-                   "Presentations",
-                   "Presentations",
-                   "Conferences",
                    "Relative Dating",
                    "Facies",
                    "NSF Proposals",
+                   "Presentations",
+                   "Presentations",
+                   "Conferences",
                    "Radiometric dating",
                    "Strat columns",
                    "Specious barriers",
@@ -172,13 +172,12 @@ Week_Reading <- c("",
                    "",
                    "Ch.23",
                    "",
+                   "",                                    "B.12 or N.19",
                    "",
+                   "NSF Proposals",
                    "",
                    "",
                    "TBD",
-                   "B.12 or N.19",
-                   "",
-                   "NSF Proposals",
                    "B.15 or N.21",
                    "",
                    "Specious barriers",
@@ -219,10 +218,10 @@ Lab_Meeting <- c("Field",
                    "",
                    "No lab",
                    "",
-                   "Project figure",
-                   "",
-                   "",
                    "Stedman's Landing",
+                   "",
+                   "",
+                   "Project figure",
                    "",
                    "",
                    "Baldwin Outcrop",
@@ -317,8 +316,8 @@ Why do Sedimentology and Stratigraphy (GY306[W]) matter? Sediments house the rec
 For this class to fulfill the (W) requirements of USA, you will be doing a semester-long research project in an area related to sedimentology. To build your skills in discipline-specific writing, we will be doing smaller writing assignments throughout the semester. The final projects will be peer-reviewed, revised, and then submitted for final grading and assessment.
 
 # Important Dates
-August 27th - Last day to drop without WD\
-November 1st - Last day to drop or withdraw. See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.\
+August 26th - Last day to drop without WD\
+October 31st - Last day to drop or withdraw. See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.\
 
 \newpage
 
@@ -362,18 +361,13 @@ Both lecture slides and papers will be available via Canvas. Slides will be post
 \newpage
 
 ```{r Schedule, echo=FALSE}
-kable(MeetingDays[,c("Date",
-                     "Lecture",
-                     "Lab",
-                     "Reading")
-                     ],
-  caption = "Course Schedule.",
-  align = c("l",
-            "l",
-            "l",
-            "l")
-)%>%
-  column_spec(2:4, width = "4cm")
+kable(MeetingDays[,c("Date", "Lecture", "Lab", "Reading")],
+      format = "latex",
+      align = c("l", "l", "l", "l"),
+      linesep = "",
+      booktabs = TRUE) %>%
+  column_spec(2:4, width = "4cm") %>%
+  kable_styling(latex_options = c("hold_position"))
 ```
 
 \newpage
