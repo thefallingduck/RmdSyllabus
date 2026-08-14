@@ -1,4 +1,4 @@
-\documentclass[11pt,]{article}
+\documentclass[11pt,american,]{article}
 \usepackage[margin=1in]{geometry}
 \newcommand*{\authorfont}{\fontfamily{phv}\selectfont}
 \usepackage[]{mathpazo}
@@ -24,10 +24,6 @@
 \usepackage{titling}
 \setlength{\droptitle}{-.15cm}
 
-%\setlength{\parindent}{0pt}
-%\setlength{\parskip}{6pt plus 2pt minus 1pt}
-%\setlength{\emergencystretch}{3em}  % prevent overfull lines 
-
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
@@ -38,7 +34,7 @@
 \renewcommand{\footrulewidth}{0.0pt} 
 \lhead{}
 \chead{}
-\rhead{\footnotesize GY112: Earth History -- Fall 2025}
+\rhead{\footnotesize GY112: Earth History -- Summer 2026}
 \lfoot{}
 \cfoot{\small \thepage /\pageref*{LastPage}}
 \rfoot{}
@@ -50,13 +46,9 @@
    \fancyfoot[C]{\small \thepage/\pageref*{LastPage}}
 }
 
-%\def\labelitemi{--}
-%\usepackage{enumitem}
-%\setitemize[0]{leftmargin=25pt}
-%\setenumerate[0]{leftmargin=25pt}
-
-
-
+% --- ACCESSIBILITY ADDITIONS START ---
+\usepackage{hyperxmp} % Generates XMP Metadata
+% --- ACCESSIBILITY ADDITIONS END ---
 
 \makeatletter
 \@ifpackageloaded{hyperref}{}{%
@@ -74,8 +66,17 @@
     \usepackage[usenames,dvipsnames]{color}
 }
 \makeatother
+
+% --- ACCESSIBILITY ADDITIONS START ---
+\@ifpackageloaded{accessibility}{}{%
+  \usepackage[tagged, high]{accessibility} % Attempts to tag text objects automatically
+}
+% --- ACCESSIBILITY ADDITIONS END ---
+
 \hypersetup{breaklinks=true,
             bookmarks=true,
+            pdfdisplaydoctitle=true, % Required by UA checkers
+            pdflang={en-US}, % Required by UA checkers
             pdfauthor={},
              pdfkeywords = {},  
             pdftitle={GY112: Earth History},
@@ -85,7 +86,6 @@
             linkcolor=magenta,
             pdfborder={0 0 0}}
 \urlstyle{same}  % don't use monospace font for urls
-
 
 \setcounter{secnumdepth}{0}
 
@@ -97,7 +97,7 @@
 \usepackage{setspace}
 
 \title{GY112: Earth History}
-\date{Fall 2025}
+\date{Summer 2026}
 
 
 \begin{document}  
@@ -107,18 +107,13 @@
 	
 		\thispagestyle{firststyle}
 
-%	\thispagestyle{empty}
 \textbf{\underline{Instructor}}
 \begin{multicols}{2}
 
   \textbf{Dr.~Benjamin J. Linzmeier}\\
   Email: \href{mailto:blinzmeier@southalabama.edu}{\nolinkurl{blinzmeier@southalabama.edu}}\\
   Preferred contact: Canvas LMS messages\\
-<<<<<<< HEAD
-  Office Hours: 9:00 - 11:00 am MWF\\
-=======
-  Office Hours: 9:00 - 111:00 am MWF\\
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
+  Office Hours: By appointment only\\
   Office: Life Science Building room 344\\
   Correspondence policy: Within 24 hours on weekdays; 48 hours on
 weekends\\
@@ -128,8 +123,8 @@ weekends\\
 	
 \noindent \begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} lr @{\extracolsep{\fill}}}
 \textbf{\underline{Class information}}\\
-  Classroom: LCSB 0119\\
-  Class Hours: 9:30 - 10:45 am TTh\\
+  Classroom: Canvas only\\
+  Class Hours: Self-paced M-F\\
     \\
 	\end{tabular*}\\
 
@@ -149,19 +144,12 @@ application to studying how the Earth works.
 
 \section{Important Dates}\label{important-dates}
 
-<<<<<<< HEAD
-August 26th - Last day to drop without WD\\
-October 31st - Last day to drop or withdraw. See the
-\href{https://www.southalabama.edu/academiccalendar/}{Academic Calendar}
-for more information.\\
-=======
 August 23rd - Last day to drop without WD\\
 October 4th - Midterm\\
 October 28th - Last day to drop or withdraw. See the
 \href{https://www.southalabama.edu/academiccalendar/}{Academic Calendar}
 for more information.\\
 December 8th - Final 10:30 am - 12:30 pm\\
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
 
 \section{Course goals}\label{course-goals}
 
@@ -188,127 +176,86 @@ We will be reading a book written for a general audience this semester.
 It has fewer figures than a textbook, but a better narrative. It is also
 less expensive.
 
-<<<<<<< HEAD
 Knoll, Andrew H. \textbf{A Brief History of Earth.} Mariner Books, 2023.
-=======
-Hazen, Robert M. \textbf{The Story of Earth: The First 4.5 Billion
-Years, from Stardust to Living Planet.} Reprint edition. Penguin Books,
-2013.
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
 
 \subsubsection{Lectures and papers}\label{lectures-and-papers}
 
 Both lecture slides and supplemental readings will be available via
 Canvas. Slides will generally be posted shortly before lecture.
 
-\section{Tophat}\label{tophat}
-
-We will be using Tophat to facilitate active learning during class. It
-is relatively inexpensive and can be used in other classes as well. If
-you encounter a hardship in activating it, please let me know as soon as
-possible.
-
 \section{Canvas}\label{canvas}
 
 We will be using Canvas for quizzes, discussions, and your
-gots-and-nots. These will be organized into weekly modules. New
-discussion posts will be available on Saturday and quizzes for the
-previous week will be due on Saturday. Quizzes will be accessible
-Thursday afternoon.
-<<<<<<< HEAD
+gots-and-nots. These will be organized into daily modules. New
+discussion posts will be available on upon completion of the previous
+module and quizzes will be open upon completion of previous materials in
+the module.
 
 \section{AI Statement}\label{ai-statement}
 
 We will discuss in more depth in class. The fundamental AI policy (Large
 Language Models like ChatGPT and other generative AI tools) is you are
 responsible for your work. If you use it, and you submit an incorrect,
-incomplete, or poor answer, you are responsible for what you submit. I
-deally you only use AI tools to help you better understand the material
+incomplete, or poor answer, you are responsible for what you submit.
+Ideally you only use AI tools to help you better understand the material
 in conjunction with completing coursework, visiting office hours, and
 group study.
 
 \newpage
 
-\begin{tabular}{ll>{\raggedright\arraybackslash}p{5cm}>{\raggedright\arraybackslash}p{5cm}}
-\toprule
-Date & Class & Lecture & Reading\\
-\midrule
-2025-08-19 & 1 & Introduction & Prologue\\
-2025-08-21 & 2 & Earth History as Science & \\
-2025-08-26 & 3 & The Universe & Chemical Earth\\
-2025-08-28 & 4 & The Earth, broadly & \\
-2025-09-02 & 5 & Hadean and Archean & Physical Earth\\
-2025-09-04 & 6 & Archean Eon & \\
-2025-09-09 & 7 & Evolution 1 & Paper - Canvas\\
-2025-09-11 & 8 & Evolution 2 & \\
-2025-09-16 & 9 & Proterozoic Life 1 & Biological Earth\\
-2025-09-18 & 10 & Proterozoic Life 2 & \\
-2025-09-23 & 11 & Proterozoic Geology 1 & Oxygen Earth\\
-2025-09-25 & 12 & Proterozoic Geology 2 & \\
-2025-09-30 & 13 & Paleozoic Geology 1 & \\
-2025-10-02 & 14 & Paleozoic Geology 2 & Paper - Canvas\\
-2025-10-07 & 15 & Midterm & \\
-2025-10-14 & 16 & Paleozoic Life 1 & Animal Earth\\
-2025-10-16 & 17 & Paleozoic Life 2 & Green Earth\\
-2025-10-21 & 18 & Common cause & Paper - Canvas\\
-2025-10-23 & 19 & Convergence & Paper - Canvas\\
-2025-10-28 & 20 & Mesozoic Geology 1 & Paper - Canvas\\
-2025-10-30 & 21 & Mesozoic Geology 2 & \\
-2025-11-04 & 22 & Mesozoic Life 1 & \\
-2025-11-06 & 23 & Mesozoic Life 2 & Catastrophic Earth\\
-2025-11-11 & 24 & Cenozoic Geology 1 & Paper - Canvas\\
-2025-11-13 & 25 & Cenozoic Geology 2 & \\
-2025-11-18 & 26 & Models in Earth History & Paper - Canvas\\
-2025-11-20 & 27 & Cenozoic Life 1 & Paper - Canvas\\
-2025-11-25 & 28 & Cenozoic Life 2 & \\
-2025-12-02 & 29 & Climate and the future 1 & Human Earth\\
-2025-12-04 & 30 & Climate and the future 2 & \\
-\bottomrule
-\end{tabular}
-=======
+\section{Class schedule}\label{class-schedule}
 
-\newpage
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.0833}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4861}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2639}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Class
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Date
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Lecture
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Reading
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & Tue, Aug 18 & Intro and Earth History as Science & Prologue \\
+2 & Thu, Aug 20 & & \\
+3 & Tue, Aug 25 & History of the Universe & Chemical Earth \\
+4 & Thu, Aug 27 & & \\
+5 & Tue, Sep 01 & Geologist's Toolbox & Physical Earth \\
+6 & Thu, Sep 03 & & \\
+7 & Tue, Sep 08 & Archean Eon & Paper - Canvas \\
+8 & Thu, Sep 10 & & \\
+9 & Tue, Sep 15 & Evolution & Biological Earth \\
+10 & Thu, Sep 17 & & \\
+11 & Tue, Sep 22 & Proterozoic Geology & Oxygen Earth \\
+12 & Thu, Sep 24 & & \\
+13 & Tue, Sep 29 & Proterozoic Life & Paper - Canvas \\
+14 & Thu, Oct 01 & & \\
+15 & Tue, Oct 06 & Midterm & Animal Earth \\
+16 & Tue, Oct 13 & & \\
+17 & Thu, Oct 15 & Common Cause & Green Earth \\
+18 & Tue, Oct 20 & & \\
+19 & Thu, Oct 22 & Paleozoic Geology & Paper - Canvas \\
+20 & Tue, Oct 27 & & \\
+21 & Thu, Oct 29 & Paleozoic Life & Paper - Canvas \\
+22 & Tue, Nov 03 & & \\
+23 & Thu, Nov 05 & Mesozoic Geology & Paper - Canvas \\
+24 & Tue, Nov 10 & & Catastrophic Earth \\
+25 & Thu, Nov 12 & Mesozoic Life & Paper - Canvas \\
+26 & Tue, Nov 17 & & Paper - Canvas \\
+27 & Thu, Nov 19 & Cenozoic Geology & Paper - Canvas \\
+28 & Tue, Nov 24 & Cenozoic Life & Human Earth \\
+29 & Tue, Dec 01 & Models in Earth History & \\
+30 & Thu, Dec 03 & Climate and the future & \\
+\end{longtable}
 
-\begin{table}[!h]
-\centering
-\begin{tabular}{l>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}p{4cm}}
-\toprule
-Date & Class & Lecture & Reading\\
-\midrule
-2025-08-19 & 1 & Introduction & Introduction\\
-2025-08-21 & 2 & Earth History as Science & \\
-2025-08-26 & 3 & The Universe & Birth\\
-2025-08-28 & 4 & The Earth, broadly & \\
-2025-09-02 & 5 & Hadean and Archean & Blue Earth\\
-2025-09-04 & 6 & Archean Eon & \\
-2025-09-09 & 7 & Evolution 1 & Living Earth\\
-2025-09-11 & 8 & Evolution 2 & \\
-2025-09-16 & 9 & Proterozoic Geology 1 & Red Earth\\
-2025-09-18 & 10 & Proterozoic Geology 2 & \\
-2025-09-23 & 11 & Proterozoic Life 1 & The 'Boring' Billion\\
-2025-09-25 & 12 & Proterozoic Life 2 & \\
-2025-09-30 & 13 & Common Cause & White Earth\\
-2025-10-02 & 14 & Paleozoic Geology 1 & \\
-2025-10-07 & 15 & Midterm Review & \\
-2025-10-14 & 16 & Midterm & TBD\\
-2025-10-16 & 17 & Paleozoic Geology 2 & \\
-2025-10-21 & 18 & Paleozoic Life 1 & Green Earth\\
-2025-10-23 & 19 & Paleozoic Life 2 & \\
-2025-10-28 & 20 & Mesozoic Geology 1 & TBD\\
-2025-10-30 & 21 & Mesozoic Geology 2 & \\
-2025-11-04 & 22 & Mesozoic Life 1 & TBD\\
-2025-11-06 & 23 & Mesozoic Life 2 & \\
-2025-11-11 & 24 & Cenozoic Geology 1 & TBD\\
-2025-11-13 & 25 & Cenozoic Geology 2 & \\
-2025-11-18 & 26 & Cenozoic Life 1 & TBD\\
-2025-11-20 & 27 & Cenozoic Life 2 & \\
-2025-11-25 & 28 & Models in Earth Science & TBD\\
-2025-12-02 & 29 & Climate and the future 1 & The Future\\
-2025-12-04 & 30 & Climate and the future 2 & \\
-\bottomrule
-\end{tabular}
-\end{table}
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
 \newpage
 
 \section{Student conduct}\label{student-conduct}
@@ -320,8 +267,7 @@ assigned a failing (F) grade. Review the `Attendance and Absences
 Policy', in the Undergraduate and Graduate Bulletin for attendance and
 absences policy.
 
-Lectures can be attened in person or via Zoom. Recordings will be made
-available by request.
+Lectures will be recorded. You are expected to do .
 
 \subsection{Grading}\label{grading}
 
@@ -361,7 +307,7 @@ F & \textless{} 60 \% \\
 
 Assignment weighting will follow:
 
-\begin{longtable}[]{@{}lrl@{}}
+\begin{longtable}[]{@{}lcr@{}}
 \toprule\noalign{}
 Item & Weight & Graded \\
 \midrule\noalign{}
@@ -481,7 +427,6 @@ please notify the instructor/professor and provide certification from
 the Office of Special Student Services. OSSS is located at 5828 Old
 Shell Road at Jaguar Drive, (251-460-7212).
 
-<<<<<<< HEAD
 \subsection{Title IX -- Sex discrimination
 resources}\label{title-ix-sex-discrimination-resources}
 
@@ -496,8 +441,6 @@ information on the Title IX office can be found
 \href{https://www.southalabama.edu/departments/studentaffairs/titlenine/}{at
 their website}.
 
-=======
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
 \subsection{Food insecurity}\label{food-insecurity}
 
 If you are subject to food insecurity, JagPantry provides a food for
@@ -505,7 +448,6 @@ students needing assistance. More information can be found
 \href{https://www.southalabama.edu/departments/sga/foodpantry.html}{on
 their website}
 
-<<<<<<< HEAD
 \subsection{Lower Internet Costs}\label{lower-internet-costs}
 
 Because of the hybrid delivery mode of the course, reliable internet is
@@ -518,8 +460,6 @@ service supported through these programs is
 supported by a Pell Grant, are a veteran, or have other qualifying
 statuses, this option can provide free broadband.
 
-=======
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
 \subsection{Mental health}\label{mental-health}
 
 Being a university student is stressful and can negatively impact mental
@@ -563,11 +503,7 @@ Canvas and changes will be announced in class.}
 \makeatletter
 \def\@maketitle{%
   \newpage
-%  \null
-%  \vskip 2em%
-%  \begin{center}%
   \let \footnote \thanks
     {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
 }
-%\fi
 \makeatother

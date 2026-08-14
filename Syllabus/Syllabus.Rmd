@@ -1,32 +1,23 @@
 ---
+lang: "en-US"
 title: 'GY112: Earth History'
-date: "Fall 2025"
+date: "Summer 2026"
 output:
+  html_document:
+    df_print: paged
   pdf_document:
     keep_tex: yes
     fig_caption: yes
     latex_engine: pdflatex
     template: Syllabus_template.tex
-  html_document:
-    df_print: paged
 geometry: margin=1in
-
-#Fill this in with any number of instructors. It uses a two column layout with a column break after each instructor.
-
 instructor:
 - name: Dr. Benjamin J. Linzmeier
   email: blinzmeier@southalabama.edu
   prefered_contact: Canvas LMS messages
-<<<<<<< HEAD
-  officehours: 9:00 - 11:00 am MWF
-=======
-  officehours: 9:00 - 111:00 am MWF
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
+  officehours: By appointment only
   office: Life Science Building room 344
   correspondence_policy: Within 24 hours on weekdays; 48 hours on weekends
-
-# You can include multiple entries for a teaching assistant by filling in all these options below. Currently this is set to populate two columns on the syllabus but there is not an even column break inserted.
-
 # teachingassistant:
 #  - name: Filler
 #    email: filler@fill.com
@@ -34,12 +25,8 @@ instructor:
 #    office: OfficeNumber
 #    sections: '301'
    
-<<<<<<< HEAD
-classroom: 'LCSB 0119	'
-=======
-classroom: 'LCSB 0119'
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
-classhours: 9:30 - 10:45 am	TTh
+classroom: 'Canvas only'
+classhours: Self-paced M-F
 #labroom: 'LCSB 337'
 #labhours: 1:25 pm - 3:55 pm	W
 fontfamily: mathpazo
@@ -60,34 +47,32 @@ library(kableExtra)
 #Semester start and end dates are selected and then university holidays like spring break are specified.
 
 #Days of the week that the course meets. Must be full day name in quotes.
-Days <- c("Tuesday", "Thursday")
+Days <- c("Tuesday","Thursday")
 
 #Semester start date for classes as YYYY/M/D.
-SemesterStart <- as.Date("2025/8/19")
+SemesterStart <- as.Date("2026/8/18")
 
 #Semester end date for classes as YYYY/M/D.
-SemesterEnd <- as.Date("2025/12/5")
+SemesterEnd <- as.Date("2026/12/4")
 
 #Fall break start and stop date.
 FallBreak <-
   seq.Date(
-    from = as.Date("2025/10/09"),
-    to = as.Date("2025/10/12"),
+    from = as.Date("2026/10/08"),
+    to = as.Date("2026/10/11"),
     by = "day"
   )
 
 #Spring break start and stop date.
 SpringBreak <-
   seq.Date(
-<<<<<<< HEAD
     from = as.Date("2025/03/03"),
     to = as.Date("2025/03/09"),
-=======
-    from = as.Date("2025/03/3"),
-    to = as.Date("2025/03/9"),
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
     by = "day"
   )
+
+#Observed 4th start and stop date.
+ObsFourth <-as.Date("2026/07/03")
 
 #Creates a list of days within the semester.
 SemesterDays <-
@@ -104,8 +89,8 @@ DayBeforeThnks<-c(as.Date(holiday(
 Holidays <-
   c(as.Date(holiday(
     year = getRmetricsOptions("currentYear"),
-    Holiday = c("USLaborDay", "USThanksgivingDay", "USMLKingsBirthday")
-  )), SpringBreak, FallBreak, DayBeforeThnks)
+    Holiday = c("USMemorialDay","USLaborDay", "USThanksgivingDay", "USMLKingsBirthday", "USIndependenceDay")
+  )), SpringBreak, FallBreak, DayBeforeThnks, ObsFourth)
 
 #Create a list of semester days excluding holidays.
 SemesterDays <- SemesterDays[!SemesterDays %in% Holidays]
@@ -131,51 +116,36 @@ MeetingDays$Class <- 1:nrow(MeetingDays)
 
 #Replace this with c("Lecture topic 1",...,"Lecture topic N") to fill in table.
 
-Lecture_Topic <- c("Introduction",
-                   "Earth History as Science",
-                   "The Universe",
-                   "The Earth, broadly",
-                   "Hadean and Archean",
+Lecture_Topic <- c("Intro and Earth History as Science",
+                   "",
+                   "History of the Universe",
+                   "",
+                   "Geologist's Toolbox",
+                   "",
                    "Archean Eon",
-                   "Evolution 1",
-                   "Evolution 2",
-<<<<<<< HEAD
-                   "Proterozoic Life 1",
-                   "Proterozoic Life 2",
-                   "Proterozoic Geology 1",
-                   "Proterozoic Geology 2",
-                   "Paleozoic Geology 1",
-                   "Paleozoic Geology 2",
+                   "",
+                   "Evolution",
+                   "",
+                   "Proterozoic Geology",
+                   "",
+                   "Proterozoic Life",
+                   "",
                    "Midterm",
-                   "Paleozoic Life 1",
-                   "Paleozoic Life 2",
-                   "Common cause",
-                   "Convergence",
-=======
-                   "Proterozoic Geology 1",
-                   "Proterozoic Geology 2",
-                   "Proterozoic Life 1",
-                   "Proterozoic Life 2",
+                   "",
                    "Common Cause",
-                   "Paleozoic Geology 1",
-                   "Midterm Review",
-                   "Midterm",
-                   "Paleozoic Geology 2",
-                   "Paleozoic Life 1",
-                   "Paleozoic Life 2",
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
-                   "Mesozoic Geology 1",
-                   "Mesozoic Geology 2",
-                   "Mesozoic Life 1",
-                   "Mesozoic Life 2",
-                   "Cenozoic Geology 1",
-                   "Cenozoic Geology 2",
-<<<<<<< HEAD
+                   "",
+                   "Paleozoic Geology",
+                   "",
+                   "Paleozoic Life",
+                   "",
+                   "Mesozoic Geology",
+                   "",
+                   "Mesozoic Life",
+                   "",
+                   "Cenozoic Geology",
+                   "Cenozoic Life",
                    "Models in Earth History",
-                   "Cenozoic Life 1",
-                   "Cenozoic Life 2",
-                   "Climate and the future 1",
-                   "Climate and the future 2")
+                   "Climate and the future")
   #1:nrow(MeetingDays)
 
 Reading_Assignment <- c("Prologue",
@@ -190,69 +160,29 @@ Reading_Assignment <- c("Prologue",
                         "",
                         "Oxygen Earth",
                         "",
-                        "",
                         "Paper - Canvas",
                         "",
                         "Animal Earth",
+                        "",
                         "Green Earth",
-                        "Paper - Canvas",
-                        "Paper - Canvas",
+                        "",
                         "Paper - Canvas",
                         "",
+                        "Paper - Canvas",
                         "",
+                        "Paper - Canvas",
                         "Catastrophic Earth",
                         "Paper - Canvas",
-                        "",
                         "Paper - Canvas",
                         "Paper - Canvas",
-                        "",
                         "Human Earth",
-                        "")
-=======
-                   "Cenozoic Life 1",
-                   "Cenozoic Life 2",
-                   "Models in Earth Science",
-                   "Climate and the future 1",
-                   "Climate and the future 2")
-  #1:nrow(MeetingDays)
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
-
-Reading_Assignment <- c("Introduction",
                         "",
-                        "Birth",
-                        "",
-                        "Blue Earth",
-                        "",
-                        "Living Earth",
-                        "",
-                        "Red Earth",
-                        "",
-                        "The 'Boring' Billion",
-                        "",
-                        "White Earth",
-                        "",
-                        "",
-                        "TBD",
-                        "",
-                        "Green Earth",
-                        "",
-                        "TBD",
-                        "",
-                        "TBD",
-                        "",
-                        "TBD",
-                        "",
-                        "TBD",
-                        "",
-                        "TBD",
-                        "The Future",
                         "")
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
 MeetingDays <- bind_cols(MeetingDays, Lecture = Lecture_Topic, Reading = Reading_Assignment)
+
+# Change the date format to something more readable
+MeetingDays$Date <- format(MeetingDays$Date, "%a, %b %d")
 
 #### Grade table ####
 Grades <- tribble( ~ Grade,
@@ -301,17 +231,11 @@ Weights <- tribble(
 What can studying the history of Earth tell us about the future and the present? In this course we will walk though major events in the history of our planet and dive into the processes and peculiarities that caused them. We will connect these events to places that matter to us and learn about how their occurrence shapes life today. By the end of the semester you will have a broad understanding of the science of Geology and its application to studying how the Earth works.
 
 # Important Dates
-<<<<<<< HEAD
-August 26th - Last day to drop without WD\
-October 31st - Last day to drop or withdraw.
-See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.\
-=======
 August 23rd - Last day to drop without WD\
 October 4th - Midterm\
 October 28th - Last day to drop or withdraw.
 See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.\
 December 8th - Final 10:30 am - 12:30 pm\
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
 
 # Course goals
 
@@ -326,49 +250,39 @@ December 8th - Final 10:30 am - 12:30 pm\
 
 We will be reading a book written for a general audience this semester. It has fewer figures than a textbook, but a better narrative. It is also less expensive.
 
-<<<<<<< HEAD
 Knoll, Andrew H. __A Brief History of Earth.__ Mariner Books, 2023.
-=======
-Hazen, Robert M. __The Story of Earth: The First 4.5 Billion Years, from Stardust to Living Planet.__ Reprint edition. Penguin Books, 2013.
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
 
 ### Lectures and papers
 Both lecture slides and supplemental readings will be available via Canvas. Slides will generally be posted shortly before lecture.
 
-# Tophat
+<!-- # Tophat -->
 
-We will be using Tophat to facilitate active learning during class. It is relatively inexpensive and can be used in other classes as well. If you encounter a hardship in activating it, please let me know as soon as possible.
+<!-- We will be using Tophat to facilitate active learning during class. It is relatively inexpensive and can be used in other classes as well. If you encounter a hardship in activating it, please let me know as soon as possible. -->
 
 # Canvas
 
-We will be using Canvas for quizzes, discussions, and your gots-and-nots. These will be organized into weekly modules. New discussion posts will be available on Saturday and quizzes for the previous week will be due on Saturday. Quizzes will be accessible Thursday afternoon.
-<<<<<<< HEAD
+We will be using Canvas for quizzes, discussions, and your gots-and-nots. These will be organized into daily modules. New discussion posts will be available on upon completion of the previous module and quizzes will be open upon completion of previous materials in the module.
 
 # AI Statement
 
-We will discuss in more depth in class. The fundamental AI policy (Large Language Models like ChatGPT and other generative AI tools) is you are responsible for your work. If you use it, and you submit an incorrect, incomplete, or poor answer, you are responsible for what you submit. I deally you only use AI tools to help you better understand the material in conjunction with completing coursework, visiting office hours, and group study.
-=======
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
+We will discuss in more depth in class. The fundamental AI policy (Large Language Models like ChatGPT and other generative AI tools) is you are responsible for your work. If you use it, and you submit an incorrect, incomplete, or poor answer, you are responsible for what you submit. Ideally you only use AI tools to help you better understand the material in conjunction with completing coursework, visiting office hours, and group study.
 
 \newpage
 
+# Class schedule
+
 ```{r Schedule, echo=FALSE}
-kable(MeetingDays[,c("Date",
-                     "Class",
+kable(MeetingDays[,c("Class",
+                     "Date",
                      "Lecture",
                      "Reading")
                      ],
-      format = "latex",
-      align = c("l", "l", "l", "l"),
-      linesep = "",
-      booktabs = TRUE) %>%
-<<<<<<< HEAD
-  column_spec(3:4, width = "5cm") #%>%
+      align = c("l", "l", "l", "l"))
+# ,
+#       linesep = "",
+#       booktabs = TRUE) %>%
+#   column_spec(3:4, width = "5cm") #%>%
   #kable_styling(latex_options = c("hold_position"))
-=======
-  column_spec(2:4, width = "4cm") %>%
-  kable_styling(latex_options = c("hold_position"))
->>>>>>> 3429010098fb1f4055109ed2b3b4140843c84e82
 ```
 \newpage
 
@@ -378,7 +292,7 @@ kable(MeetingDays[,c("Date",
 
 Students who complete less than 50% of assignments/exams will be assigned a failing (F) grade. Review the 'Attendance and Absences Policy', in the Undergraduate and Graduate Bulletin for attendance and absences policy.
 
-Lectures can be attened in person or via Zoom. Recordings will be made available by request.
+Lectures will be recorded. You are expected to do .
 
 ## Grading
 
@@ -401,7 +315,7 @@ kable(Grades,
 Assignment weighting will follow:
 ```{r Weights_Table, echo=FALSE}
 kable(Weights,
-      align = c("l", "r"))
+      align = c("l", "c","r"))
 ```
 
 <!-- The sections of code below that include "child=..." are drawing from seperate .md documents. These allow for updating text in a single spot for use in multiple syllabus documents. -->

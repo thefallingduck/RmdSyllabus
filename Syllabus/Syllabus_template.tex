@@ -28,10 +28,6 @@ $endif$
 \usepackage{titling}
 \setlength{\droptitle}{-.15cm}
 
-%\setlength{\parindent}{0pt}
-%\setlength{\parskip}{6pt plus 2pt minus 1pt}
-%\setlength{\emergencystretch}{3em}  % prevent overfull lines 
-
 \usepackage[$if(fontenc)$$fontenc$$else$T1$endif$]{fontenc}
 \usepackage[utf8]{inputenc}
 
@@ -54,13 +50,9 @@ $endif$
    \fancyfoot[C]{\small \thepage/\pageref*{LastPage}}
 }
 
-%\def\labelitemi{--}
-%\usepackage{enumitem}
-%\setitemize[0]{leftmargin=25pt}
-%\setenumerate[0]{leftmargin=25pt}
-
-
-
+% --- ACCESSIBILITY ADDITIONS START ---
+\usepackage{hyperxmp} % Generates XMP Metadata
+% --- ACCESSIBILITY ADDITIONS END ---
 
 \makeatletter
 \@ifpackageloaded{hyperref}{}{%
@@ -78,8 +70,17 @@ $endif$
     \usepackage[usenames,dvipsnames]{color}
 }
 \makeatother
+
+% --- ACCESSIBILITY ADDITIONS START ---
+\@ifpackageloaded{accessibility}{}{%
+  \usepackage[tagged, high]{accessibility} % Attempts to tag text objects automatically
+}
+% --- ACCESSIBILITY ADDITIONS END ---
+
 \hypersetup{breaklinks=true,
             bookmarks=true,
+            pdfdisplaydoctitle=true, % Required by UA checkers
+            pdflang={$if(lang)$$lang$$else$en-US$endif$}, % Required by UA checkers
             pdfauthor={$for(author)$$author.name$ ($author.affiliation$)$sep$ and $endfor$},
              pdfkeywords = {$if(keywords)$$keywords$$endif$},  
             pdftitle={$title$$if(subtitle)$: $subtitle$$endif$},
@@ -89,7 +90,6 @@ $endif$
             linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
             pdfborder={0 0 0}}
 \urlstyle{same}  % don't use monospace font for urls
-
 
 \setcounter{secnumdepth}{0}
 
@@ -111,9 +111,6 @@ $endif$
 
 $if(graphics)$
 \usepackage{graphicx}
-% We will generate all images so they have a width \maxwidth. This means
-% that they will get their normal width if they fit onto the page, but
-% are scaled down if they would overflow the margins.
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
 \else\Gin@nat@width\fi}
@@ -162,7 +159,6 @@ $endif$
 	
 		\thispagestyle{firststyle}
 
-%	\thispagestyle{empty}
 \textbf{\underline{Instructor}}
 \begin{multicols}{2}
 $for(instructor)$
@@ -232,9 +228,6 @@ $endif$
 $if(biblatex)$
 \printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
 
-
-
-
 $endif$
 $for(include-after)$
 $include-after$
@@ -245,11 +238,7 @@ $endfor$
 \makeatletter
 \def\@maketitle{%
   \newpage
-%  \null
-%  \vskip 2em%
-%  \begin{center}%
   \let \footnote \thanks
     {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
 }
-%\fi
 \makeatother
