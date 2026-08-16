@@ -1,6 +1,6 @@
 ---
 title: 'GY306(W): Sedimentology and Stratigraphy'
-date: "Fall 2025"
+date: "Fall 2026"
 output:
   pdf_document:
     keep_tex: yes
@@ -15,7 +15,7 @@ instructor:
 - name: Dr. Benjamin J. Linzmeier
   email: blinzmeier@southalabama.edu
   prefered_contact: Canvas LMS messages
-  officehours: "9:00 - 11:00 am MWF"
+  officehours: "TBD"
   office: Life Science Building room 344
   correspondence_policy: Within 24 hours on weekdays; 48 hours on weekends
 classroom: LCSB 337
@@ -25,6 +25,9 @@ labhours: "1:25 pm - 3:55 pm\tW"
 fontfamily: mathpazo
 fontsize: 11pt
 header-includes: \linespread{1.05}
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
 ```{r setup, include=FALSE}
@@ -43,16 +46,16 @@ library(kableExtra)
 Days <- c("Monday", "Wednesday", "Friday")
 
 #Semester start date for classes as YYYY/M/D.
-SemesterStart <- as.Date("2025/8/19")
+SemesterStart <- as.Date("2026/8/18")
 
 #Semester end date for classes as YYYY/M/D.
-SemesterEnd <- as.Date("2025/12/5")
+SemesterEnd <- as.Date("2026/12/4")
 
 #Fall break start and stop date.
 FallBreak <-
   seq.Date(
-    from = as.Date("2025/10/09"),
-    to = as.Date("2025/10/12"),
+    from = as.Date("2026/10/08"),
+    to = as.Date("2026/10/11"),
     by = "day"
   )
 
@@ -284,7 +287,9 @@ Grades <- tribble( ~ Grade,
                    "D",
                    "60-69",
                    "F",
-                   "< 60")
+                   "< 60",
+                   "F*",
+                   "< 60 attendance")
 
 ####Assignment weight table####
 Weights <- tribble(
@@ -309,54 +314,87 @@ Weights <- tribble(
 
 # Course description
 
-Why do Sedimentology and Stratigraphy (GY306[W]) matter? Sediments house the record of climate at Earth's surface, influence climate through feedbacks, and house important resources. In this course you will learn how sediments are formed, moved, and preserved in the rock record. We will discuss the way that paleoenvironments are interpreted from observations of rocks on multiple scales. In addition, we will work together to improve your writing skills with a focus on a few of the genres of writing you may be expected to do as professional geologists.
+Why do Sedimentology and Stratigraphy (GY306[W]) matter? Sediments house
+the record of climate at Earth's surface, influence climate through
+feedbacks, and house important resources. In this course you will learn
+how sediments are formed, moved, and preserved in the rock record. We
+will discuss the way that paleoenvironments are interpreted from
+observations of rocks on multiple scales. In addition, we will work
+together to improve your writing skills with a focus on a few of the
+genres of writing you may be expected to do as professional geologists.
 
 # Writing requirements
 
-For this class to fulfill the (W) requirements of USA, you will be doing a semester-long research project in an area related to sedimentology. To build your skills in discipline-specific writing, we will be doing smaller writing assignments throughout the semester. The final projects will be peer-reviewed, revised, and then submitted for final grading and assessment.
+For this class to fulfill the (W) requirements of USA, you will be doing
+a semester-long research project in an area related to sedimentology. To
+build your skills in discipline-specific writing, we will be doing
+smaller writing assignments throughout the semester. The final projects
+will be peer-reviewed, revised, and then submitted for final grading and
+assessment.
 
 # Important Dates
+
 August 26th - Last day to drop without WD\
-October 31st - Last day to drop or withdraw. See the [Academic Calendar](https://www.southalabama.edu/academiccalendar/) for more information.\
+October 31st - Last day to drop or withdraw. See the [Academic
+Calendar](https://www.southalabama.edu/academiccalendar/) for more
+information.\
 
 \newpage
 
 # Course goals
 
-1.  Observe, describe, classify, and communicate about sediments and sedimentary rocks.
+1.  Observe, describe, classify, and communicate about sediments and
+    sedimentary rocks.
 
-2.  Develop a framework for building hypotheses about the distributions of sediments, sedimentary structures, and sedimentary environments.
+2.  Develop a framework for building hypotheses about the distributions
+    of sediments, sedimentary structures, and sedimentary environments.
 
-3.  Communicate sedimentary geology to audiences using different genres of writing.
+3.  Communicate sedimentary geology to audiences using different genres
+    of writing.
 
-4.  Read and summarize scientific papers focused on sedimentary geology and related fields.
+4.  Read and summarize scientific papers focused on sedimentary geology
+    and related fields.
 
 # Class textbooks
 
-We will have two books that you should have access to for the class this semester. The book on writing below will be referenced and discussed often. We will also refer to the general sedimentology and stratigraphy book.
+We will have two books that you should have access to for the class this
+semester. The book on writing below will be referenced and discussed
+often. We will also refer to the general sedimentology and stratigraphy
+book.
 
 ### For writing
 
-Heard, Stephen B., __The Scientist’s Guide to Writing, 2nd Edition: How to Write More Easily and Effectively throughout Your Scientific Career.__ 2nd edition. Princeton: Princeton University Press, 2022.
+Heard, Stephen B., **The Scientist’s Guide to Writing, 2nd Edition: How
+to Write More Easily and Effectively throughout Your Scientific
+Career.** 2nd edition. Princeton: Princeton University Press, 2022.
 
 ### For general Sedimentology and Stratigraphy
-Gary Nichols, __Sedimentology and Stratigraphy__, 2nd edition, Wiley-Blackwell, ISBN: 978-1-405-13592-4
+
+Gary Nichols, **Sedimentology and Stratigraphy**, 2nd edition,
+Wiley-Blackwell, ISBN: 978-1-405-13592-4
 
 or
 
-Sam Boggs Jr., __Principles of Sedimentology and Stratigraphy__, 5th edition, Pearson, ISBN: 0321643186
+Sam Boggs Jr., **Principles of Sedimentology and Stratigraphy**, 5th
+edition, Pearson, ISBN: 0321643186
 
 ## Optional books
 
 ### Field focused rock ID
-Dorrik A.V. Stow, __Sedimentary Rocks in the Field: A Colour Guide__, Manson Publishing Ltd, ISBN 10: 1874545693
+
+Dorrik A.V. Stow, **Sedimentary Rocks in the Field: A Colour Guide**,
+Manson Publishing Ltd, ISBN 10: 1874545693
 
 ### Improve the mechanics of your writing
-William Strunk JR. and E.B. White, __The Elements of Style__, ISBN: 1594200696
+
+William Strunk JR. and E.B. White, **The Elements of Style**, ISBN:
+1594200696
 
 ### Lectures and papers
-Both lecture slides and papers will be available via Canvas. Slides will be posted after lectures and assigned papers will be available in Canvas.
 
+Both lecture slides and papers will be available via Canvas. Slides will
+be posted after lectures and assigned papers will be available in
+Canvas.
 
 \newpage
 
@@ -376,22 +414,36 @@ kable(MeetingDays[,c("Date", "Lecture", "Lab", "Reading")],
 
 ## Attendance policy
 
-Students who complete less than 50% of assignments/exams will be assigned a failing (F) grade.
+Students who complete less than 50% of assignments/exams by number of assignment and not weight, will be assigned a failing (F) grade.
 
-Review the 'Attendance and Absences Policy', in the Undergraduate and Graduate Bulletin for attendance and absences policy
+If you stop attending or fail to  
 
+Review the 'Attendance and Absences Policy', in the Undergraduate and
+Graduate Bulletin for attendance and absences policy
 
-## AI Statement
+An individual student is responsible for attending the classes in which the student is officially enrolled. The quality of work will ordinarily suffer from excessive absences.
 
-We will discuss in more depth in class. The fundamental AI policy (Large Language Models like ChatGPT and other generative AI tools) is you are responsible for your work. If you use it, and you submit an incorrect, incomplete, or poor answer, you are responsible for what you submit. Ideally you only use AI tools to help you better understand the material in conjunction with completing coursework, visiting office hours, and group study.
+For excessive absences (two or three consecutive class meetings) due to illness, death in the family, or family emergency, the Dean of Students' office should be advised. Absence notices will be sent to each instructor notifying him of the reason for and the approximate length of the absence. This notification does not constitute an excused absence.
+
+Students receiving veterans' benefits are required to attend classes according to the regulations of the Veterans Administration.
+
+All international students on F-1 visas must comply with attendance regulations as dictated by the Department of Justice, Immigration and Naturalization Services. They must remain students in good standing with at least twelve (12) hours per semester.
+
+Students attending authorized off-campus functions or required activities shall be excused by the responsible University official through the Office of Academic Affairs. In case of doubt, instructors may consult these lists in that office. Work missed as a result of these excused absences may be made up.
 
 ## Grading
 
 ### Late policy
-I will be grading assignments in batches to provide fair assessment to everyone. This means late work can be disruptive. The penalty for late work will be 20% a day after the first 24 hours late. If you have a reasonable excuse (illness, etc.) the late policy may be relaxed.
+
+I will be grading assignments in batches to provide fair assessment to
+everyone. This means late work can be disruptive. The penalty for late
+work will be 25% a day after the first 24 hours late. If you have a
+reasonable excuse (illness, etc.) the late policy may be relaxed.
 
 ### Extra credit
-Extra credit may be made available throughout the semester at my discretion.
+
+Extra credit may be made available throughout the semester at my
+discretion.
 
 Assignments will be returned within a week of submission.
 
@@ -401,32 +453,41 @@ kable(Grades,
 ```
 
 Assignment weighting will follow:
+
 ```{r Weights_Table, echo=FALSE}
 kable(Weights,
       align = c("l", "r"))
 ```
 
 \newpage
+
 # Writing tasks
+
 ## Scaffolding tasks
-Scaffolding writing tasks assigned to give you some practice and general feedback to improve your writing.
+
+Scaffolding writing tasks assigned to give you some practice and general
+feedback to improve your writing.
 
 ### Abstract 1
 
-First attempt at writing an abstract using the Nature paragraph template.
+First attempt at writing an abstract using the Nature paragraph
+template.
 
 ### Figure Caption
 
-Write the figure captions for several example figures using some literature examples. Learn to describe figures in text.
+Write the figure captions for several example figures using some
+literature examples. Learn to describe figures in text.
 
 ### Abstract 2
 
-Write the abstract for a second paper using the feedback from the first abstract to improve your process.
+Write the abstract for a second paper using the feedback from the first
+abstract to improve your process.
 
 ### Peer Review
 
-Peer review of preprint or publication using example template. The goal of this assignment is to focus on critiquing the logic put forward in the paper with suggestions for refining it.
-
+Peer review of preprint or publication using example template. The goal
+of this assignment is to focus on critiquing the logic put forward in
+the paper with suggestions for refining it.
 
 ## Semester project
 
@@ -434,7 +495,8 @@ Semester project outline of writing products.
 
 ### Project Story Summary
 
-Short outline of proposed project that answers the following questions. (Based on S.B. Heard's book).\
+Short outline of proposed project that answers the following questions.
+(Based on S.B. Heard's book).\
 1) What is the central question?\
 2) Why is this question important?\
 3) What data (variables) are needed to answer this question?\
@@ -446,103 +508,151 @@ Short outline of proposed project that answers the following questions. (Based o
 
 ### Proposal introduction draft
 
-Carefully explain the knowledge that lead you to develop this hypothesis and clearly outline the hypothesis
-to be tested. Consider these questions:
-- What do we know about the question you are interested in studying?\
-- What background knowledge do people need to assess if your hypothesis can be tested?\
+Carefully explain the knowledge that lead you to develop this hypothesis
+and clearly outline the hypothesis to be tested. Consider these
+questions: - What do we know about the question you are interested in
+studying?\
+- What background knowledge do people need to assess if your hypothesis
+can be tested?\
 - How could auxiliary hypotheses be tested?\
-- What specific data are needed to test the hypothesis and is there a clear distinction between the hypothesis and alternatives?
+- What specific data are needed to test the hypothesis and is there a
+clear distinction between the hypothesis and alternatives?
 
 ### Proposal methods draft
 
-This section outlines the required samples, locations, and data that must be collected to test your hypothesis.
-Consider these questions:\
+This section outlines the required samples, locations, and data that
+must be collected to test your hypothesis. Consider these questions:\
 - Where will samples or field observations come from?\
 - Will data be collected in the field or in a lab?\
 - What instruments are needed to perform the measurements?\
-- What difficulties may come from the interpretations of the measurements?\
+- What difficulties may come from the interpretations of the
+measurements?\
 - How many analyses are needed?
 
 ### Proposal intellectual merit draft
 
-Create a section that specifically states how this proposal contributes to the field of research and is potentially
-transformative (although this is not as important for the assignment.) Consider the following questions:\
+Create a section that specifically states how this proposal contributes
+to the field of research and is potentially transformative (although
+this is not as important for the assignment.) Consider the following
+questions:\
 - What will the potential next steps be beyond testing this hypothesis?\
-- How could the findings of this work have impacts on other areas of research?
+- How could the findings of this work have impacts on other areas of
+research?
 
 ### Proposal broader impacts draft
 
-This section summarizes how your work will benefit society. This could be through applications of your
-discovery, training of individuals, or communication to people outside of the scientific community.\
+This section summarizes how your work will benefit society. This could
+be through applications of your discovery, training of individuals, or
+communication to people outside of the scientific community.\
 - Does the research have an economic or societal benefit?\
 - Does the work require the training of individuals?\
 - How would this work benefit the university or community?
 
 ### Project first draft
 
-Full proposal draft with figures. The important aspect of this submission is assessment of the research plan and justification.
+Full proposal draft with figures. The important aspect of this
+submission is assessment of the research plan and justification.
 
 ### Project peer review
 
-Review of a peer's proposal with the goal of improving the work by increasing clarity, readability and communication.
+Review of a peer's proposal with the goal of improving the work by
+increasing clarity, readability and communication.
 
 ### Project final draft
 
-Full, final project proposal with figures, time line and clear plan for work. Focus is on clearly communicating to your peers that the work is worth doing and that you can do it.
+Full, final project proposal with figures, time line and clear plan for
+work. Focus is on clearly communicating to your peers that the work is
+worth doing and that you can do it.
 
 ### Project presentation
 
-Presentation of a peer's research proposal with a focus on justifying funding their project. The goal is to convince the audience that the project can be done and will have an important impact on society.
+Presentation of a peer's research proposal with a focus on justifying
+funding their project. The goal is to convince the audience that the
+project can be done and will have an important impact on society.
 
 # On writing
 
 ## Revising written work
 
-Nothing is perfect on the first draft. We all revise and rework our written creations for a variety of reasons. We may not communicate the point we want to get across to all readers. We may have forgotten or not known important pieces of information initially. The tone of the writing may be inappropriate for the audience. Word choice might obscure meaning. The only way we can make our writing better is by revising it based on constructive feedback from others or ourselves.
+Nothing is perfect on the first draft. We all revise and rework our
+written creations for a variety of reasons. We may not communicate the
+point we want to get across to all readers. We may have forgotten or not
+known important pieces of information initially. The tone of the writing
+may be inappropriate for the audience. Word choice might obscure
+meaning. The only way we can make our writing better is by revising it
+based on constructive feedback from others or ourselves.
 
 ## Genres of Science writing
 
 ### Paper reviews
 
-Critical but constructive critique of unpublished research papers. Informs the journal editor of how the work contributes to existing literature and provides guide to authors and the editor for improvement to the manuscript. Can be signed but often anonymous.
+Critical but constructive critique of unpublished research papers.
+Informs the journal editor of how the work contributes to existing
+literature and provides guide to authors and the editor for improvement
+to the manuscript. Can be signed but often anonymous.
 
 ### Descriptive Reports
 
-Descriptive reports are often made for industry or geological surveys. These describe the composition and structure of rocks in an area. Sometimes they include estimations of resource potentials or environmental impacts of industry.
+Descriptive reports are often made for industry or geological surveys.
+These describe the composition and structure of rocks in an area.
+Sometimes they include estimations of resource potentials or
+environmental impacts of industry.
 
 ### Research papers
 
-These pieces of science writing typically test one or more closely related hypotheses in the context of existing scientific knowledge. Most have structure that is pre-defined including: abstract, introduction, methods, results, discussion, and conclusion. Figures are an integral part of most papers in the Geosciences and range from images of outcrops to abstracted summaries of observations to plots of measurements.
+These pieces of science writing typically test one or more closely
+related hypotheses in the context of existing scientific knowledge. Most
+have structure that is pre-defined including: abstract, introduction,
+methods, results, discussion, and conclusion. Figures are an integral
+part of most papers in the Geosciences and range from images of outcrops
+to abstracted summaries of observations to plots of measurements.
 
 ### Conference abstracts
 
-These are generally a step on the path to a full research publication where results, interpretations, and context are publicly presented for the first time.
+These are generally a step on the path to a full research publication
+where results, interpretations, and context are publicly presented for
+the first time.
 
 ### Grant Applications
 
-Scientific work is generally funded with public or private funds that are obtained by writing grants. Unlike research papers, grants must persuade reviewers that the research planned is important, can be done by the applicant, and can be achieved in the time frame of the funding request.
+Scientific work is generally funded with public or private funds that
+are obtained by writing grants. Unlike research papers, grants must
+persuade reviewers that the research planned is important, can be done
+by the applicant, and can be achieved in the time frame of the funding
+request.
 
 ### Science Communication
 
-Scientists also write general summaries of their work for non-specialist audiences. These can be blog posts, or lesson plans that are shared for educators. Some folks also write books for general audiences describing the processes of science.
+Scientists also write general summaries of their work for non-specialist
+audiences. These can be blog posts, or lesson plans that are shared for
+educators. Some folks also write books for general audiences describing
+the processes of science.
 
 ## Common processes
 
-For writing in the discipline, we focus on several specific questions to guide our composition:
-1) Who is our audience?
-2) What is the one or two sentence take-home point?
-3) How quickly are we communicating the information?
+For writing in the discipline, we focus on several specific questions to
+guide our composition: 1) Who is our audience? 2) What is the one or two
+sentence take-home point? 3) How quickly are we communicating the
+information?
 
-Science writing, like all writing, is socially situated and caries with it the beliefs, values, and ideologies of the particular community and culture.
+Science writing, like all writing, is socially situated and caries with
+it the beliefs, values, and ideologies of the particular community and
+culture.
 
 ## Tips and tricks for good writing
-Use a citation management software to organize your papers and create bibiliographies. My preference is [Zotero](https://www.zotero.org/) because it is free, open source, and works across multiple operating systems.
 
-Write and then revise. Ask for feedback from peers or wait until you have some distance from your writing and then revise.
+Use a citation management software to organize your papers and create
+bibiliographies. My preference is [Zotero](https://www.zotero.org/)
+because it is free, open source, and works across multiple operating
+systems.
+
+Write and then revise. Ask for feedback from peers or wait until you
+have some distance from your writing and then revise.
 
 Prompt yourself with questions that have short, concrete answers.
 
 <!-- The sections of code below that include "child=..." are drawing from seperate .md documents. These allow for updating text in a single spot for use in multiple syllabus documents. -->
+
 ```{r Academic disruption, child='general_components/academic_disruption.md'}
 
 ```
@@ -551,29 +661,53 @@ Prompt yourself with questions that have short, concrete answers.
 
 ```
 
+```{r Gen AI, child='general_components/Gen_AI_policy.md'}
+
+```
+
 ## Course and Teacher evaluation
-Student input for the purpose of course improvement is taken very seriously and will potentially be done periodically. Please take the time to evaluate this course and the instructor, especially at the end of the semester. Evaluations will in no way affect your grade.
+
+Student input for the purpose of course improvement is taken very
+seriously and will potentially be done periodically. Please take the
+time to evaluate this course and the instructor, especially at the end
+of the semester. Evaluations will in no way affect your grade.
 
 # Safety
 
 ## Field Safety
 
 ### Transportation
-Wear your seatbelts at all times while in moving vehicles. Do not distract the driver.
+
+Wear your seatbelts at all times while in moving vehicles. Do not
+distract the driver.
 
 ### Location awareness
-Be aware of potential dangers (animals, weather, etc) and avoid them. When in a group, please think about the safety of your peers.
+
+Be aware of potential dangers (animals, weather, etc) and avoid them.
+When in a group, please think about the safety of your peers.
 
 ## Building Safety
 
 ### Fire
-Random fire safety drills may occur during the course of the term. You will be expected to evacuate the building and assemble at the designated location: outside by the northeast corner of the building (follow your instructor).
+
+Random fire safety drills may occur during the course of the term. You
+will be expected to evacuate the building and assemble at the designated
+location: outside by the northeast corner of the building (follow your
+instructor).
 
 ### Tornado
-Move away from external windows to the hallway in the basement, first, or second floor. 
+
+Move away from external windows to the hallway in the basement, first,
+or second floor.
 
 ### Active Shooter Incident
-"Get Out" of the building as long as they can do so safely. Once you have exited the building and are at a safe location, "Call Out" to law enforcement using 911, USA Police at 460-6312, or press the Emergency button on your LiveSafe Mobile Safety App. If you can't get out, "Shelter in Place" in a secure location that is away from windows and doors, preferably a location that can be locked and barricaded.
+
+"Get Out" of the building as long as they can do so safely. Once you
+have exited the building and are at a safe location, "Call Out" to law
+enforcement using 911, USA Police at 460-6312, or press the Emergency
+button on your LiveSafe Mobile Safety App. If you can't get out,
+"Shelter in Place" in a secure location that is away from windows and
+doors, preferably a location that can be locked and barricaded.
 
 # Campus resources
 
@@ -611,6 +745,13 @@ Move away from external windows to the hallway in the basement, first, or second
 
 # Final thoughts
 
-This document is a roadmap for our semester. We learn about the Earth together and our individual experiences shape how we interpret and value data. Like all your classes, you will get out what you put into this course. Asking for help from one another and your instructors is important, don't be afraid to ask a question about something you don't know or if you want to check your knowledge about something you think you know.
+This document is a roadmap for our semester. We learn about the Earth
+together and our individual experiences shape how we interpret and value
+data. Like all your classes, you will get out what you put into this
+course. Asking for help from one another and your instructors is
+important, don't be afraid to ask a question about something you don't
+know or if you want to check your knowledge about something you think
+you know.
 
-__If this document is updated, a copy will be supplied to you via Canvas and changes will be announced in class.__
+**If this document is updated, a copy will be supplied to you via Canvas
+and changes will be announced in class.**

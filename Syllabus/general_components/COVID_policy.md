@@ -1,5 +1,5 @@
-## COVID policy
+## Sick leave policy
 
-While on campus, students are required to follow all USA COVID-19 policies and practices. These policies can be found at [https://www.southalabama.edu/coronavirus/](https://www.southalabama.edu/coronavirus/). Be advised that policies may change during the semester, and students should check the University's Coronavirus Update page regularly. 
+It is our responsibility to one another to avoid passing contagious diseases as much as possible. If you are feeling ill, consider staying home and attending remotely if possible. For lectures, you do not need to contact me and can attend via zoom or watch the recorded lectures by request.
 
-There is also a student incentive program for getting vaccinated. Details about insentives can be found at [https://www.southalabama.edu/coronavirus/vaccineincentive/](https://www.southalabama.edu/coronavirus/vaccineincentive/)
+If you are dealing with longer-term illness, requiring more than missing a single day of class, please contact me to discuss accommodations.
